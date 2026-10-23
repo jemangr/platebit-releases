@@ -29,7 +29,7 @@
   <img src="docs/screenshots/8-health-guide.png" width="24%" alt="Health Connect guide">
   <img src="docs/screenshots/7-settings.png" width="24%" alt="Settings">
   <img src="docs/screenshots/1-diary-el.png" width="24%" alt="The diary in Greek">
-  <img src="docs/screenshots/11-workout-el.png" width="24%" alt="Logging a workout in Greek">
+  <img src="docs/screenshots/12-exercise-history.png" width="24%" alt="Exercise history with records and estimated 1RM">
 </p>
 <p align="center">
   <img src="docs/screenshots/10-widget.png" width="60%" alt="Home-screen widget">
@@ -67,7 +67,8 @@
 - 🍽️ **Meal plan.** A week of meals from your calories and protein with common Greek foods, no AI needed: lock what you like, swap the rest, add your own, approve the week. Away from home without a fridge? It suggests foods for your bag.
 - 🛒 **Shopping list.** The week's plan as one list by aisle: the same food across days adds up, cooked rice, pasta, legumes, meat and fish become raw or dry amounts, eggs, pitas and cans are counted. Tick items as you shop (kept until next week) or share the list as text.
 - 🏋️ **Training program.** A suggested program from your days, level, gym or home and goal (sets, reps, rest and when to add weight), or type your own one exercise per line.
-- 📝 **Log your workouts.** Start a workout and every set is filled in with last time's weight and reps; tick a set to start the rest timer; when every set reached the top of the range it says how much to add (2.5 kg upper body, 5 kg lower). Saved as you go, so leaving the app mid-workout loses nothing. Already on Hevy? Import its CSV export. The AI Coach sees the last two weeks of what you lifted.
+- 📝 **Log your workouts.** Start a workout and every set is filled in with last time's weight and reps; tick a set to start the rest timer, which keeps running in the notification with the screen off and vibrates when the rest is over. Warm-ups, drop sets, sets to failure and RPE; supersets go straight to the next exercise and rest after the round. When every set reached the top of the range it says how much to add (2.5 kg upper body, 5 kg lower), and a set that beats your best is marked PR. Saved as you go, so leaving the app mid-workout loses nothing. At the end: a summary with the records you beat, and a picture to share (Pro). Already on Hevy? Import its CSV export, set types included. The AI Coach sees the last two weeks of what you lifted.
+- 🗂️ **Routines and records.** Build your own program like a gym app: exercises in order, sets, reps, rest and warm-ups for each, supersets by linking an exercise to the next, or start from the suggested one. Every exercise has its history: heaviest weight, best estimated 1RM and best session volume, a chart of your estimated 1RM over time, and every session.
 - 🎙️ **Gemini Live (optional).** With a Gemini key, Live can use Gemini's own voice: it answers as you talk and you can interrupt it mid-sentence; what was said is added to the chat.
 - 🤖 **AI Coach.** Tap the button in the middle of the screen to talk live, or hold it for the chat. It knows your meals, water, weigh-ins, body composition, activity, meal plan and program, answers from your own numbers and prepares changes as cards you accept or decline. It only talks about food, training, sleep, your data and the app.
 - 💊 **Medication reminders.** Each medicine or supplement gets a label, dose, days and times. The notification lists them in detail with Took them / Forgot; the diary asks once per part of the day ("Morning medicines", one tap for all of them), then clears and says what's next. You decide, per medicine, whether the AI Coach may see it.

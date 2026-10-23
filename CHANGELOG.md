@@ -2,6 +2,14 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.20.0 (58)
+- **Routines like a gym app** (Training → My own → Write or Edit): exercises in order with sets, reps, rest (1:00 to 3:00 or none) and warm-up sets; link an exercise to the next for a superset; move up or down; start from the suggested program; paste lines as text as before.
+- **Set types while logging:** tap a set's number for warm-up (W), drop set (D), to failure (F), RPE 6–10, or remove it. Warm-ups are pre-filled at half the working weight and never count for records, volume or the next weight. Hevy imports keep their set types and RPE.
+- **Supersets while logging:** no rest between the exercises of a round, the rest after its last; the card says which exercise is next.
+- **Records:** a set that beats your heaviest weight or best estimated 1RM is marked PR. **Exercise history** (tap an exercise, or Training → Exercises and records): heaviest weight, best estimated 1RM (Epley, 1–12 reps), best session volume, a chart of the estimated 1RM per session, every session.
+- **Rest timer with the screen off:** while a workout runs, an ongoing notification shows its time and the rest counting down; at the end of a rest the phone vibrates with a short alert. Tapping it opens the workout.
+- **After Finish:** a summary with minutes, sets, volume and the records you beat, and a picture of the workout to share (Pro).
+
 ## 1.19.3 (57)
 - Updates now come from the public releases-only repo `jemangr/platebit-releases`; the code moves to a private repo. This build is published in both places, so phones on older builds move over with it.
 
