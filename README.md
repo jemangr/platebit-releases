@@ -5,8 +5,8 @@
 <h1 align="center">Platebit</h1>
 
 <p align="center">
-  <b>Snap your meal. Know your calories. Get coached.</b><br>
-  A free Android calorie tracker and AI fitness coach, in Greek and English, that reads photos of your food with the AI you choose.
+  <b>Your AI coach for food, training and recovery.</b><br>
+  One Android app for what you eat, how you train, how you sleep and move, and the medicines you take, with an AI coach in Greek and English that knows all of it and helps you act on it.
 </p>
 
 <p align="center">
@@ -14,28 +14,28 @@
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/1-diary.png" width="24%" alt="Diary: calories, macros, water, medications and weight trend">
-  <img src="docs/screenshots/2-meal-plan.png" width="24%" alt="Meal plan built from calories and protein">
-  <img src="docs/screenshots/3-training.png" width="24%" alt="Suggested training program">
-  <img src="docs/screenshots/11-workout.png" width="24%" alt="Logging a workout">
+  <img src="docs/screenshots/1-diary.png" width="24%" alt="Today: calories, macros, water, activity and medicines">
+  <img src="docs/screenshots/11-workout.png" width="24%" alt="Logging a workout with photos, last time's weights and the rest timer">
+  <img src="docs/screenshots/14-workout-done.png" width="24%" alt="Stats after a workout: records, muscles, the week">
+  <img src="docs/screenshots/13-exercise-picker.png" width="24%" alt="Exercise library with photos, search and filters">
 </p>
 <p align="center">
-  <img src="docs/screenshots/4-history.png" width="24%" alt="History of weeks">
-  <img src="docs/screenshots/5-medications.png" width="24%" alt="Medication reminders">
-  <img src="docs/screenshots/9-groceries.png" width="24%" alt="Shopping list from the meal plan">
-  <img src="docs/screenshots/6-ai-setup.png" width="24%" alt="Step-by-step AI setup">
-</p>
-<p align="center">
-  <img src="docs/screenshots/8-health-guide.png" width="24%" alt="Health Connect guide">
-  <img src="docs/screenshots/7-settings.png" width="24%" alt="Settings">
-  <img src="docs/screenshots/1-diary-el.png" width="24%" alt="The diary in Greek">
+  <img src="docs/screenshots/16-activity.png" width="24%" alt="Steps, the day's workouts, sleep stages and heart rate">
   <img src="docs/screenshots/12-exercise-history.png" width="24%" alt="Exercise history with records and estimated 1RM">
+  <img src="docs/screenshots/2-meal-plan.png" width="24%" alt="Meal plan built from calories and protein">
+  <img src="docs/screenshots/4-history.png" width="24%" alt="History with goals per day, week and month">
 </p>
 <p align="center">
-  <img src="docs/screenshots/13-exercise-picker.png" width="24%" alt="Exercise library with search and filters">
-  <img src="docs/screenshots/14-workout-done.png" width="24%" alt="Stats after a workout">
-  <img src="docs/screenshots/16-activity.png" width="24%" alt="Activity with sleep and heart rate details">
+  <img src="docs/screenshots/3-training.png" width="24%" alt="Training program">
   <img src="docs/screenshots/17-meds-calendar.png" width="24%" alt="Medicines calendar">
+  <img src="docs/screenshots/15-measurements.png" width="24%" alt="Body measurements">
+  <img src="docs/screenshots/9-groceries.png" width="24%" alt="Shopping list from the meal plan">
+</p>
+<p align="center">
+  <img src="docs/screenshots/5-medications.png" width="24%" alt="Medication reminders">
+  <img src="docs/screenshots/6-ai-setup.png" width="24%" alt="Step-by-step AI setup">
+  <img src="docs/screenshots/18-notifications.png" width="24%" alt="A sound for each notification, phone or watch">
+  <img src="docs/screenshots/1-diary-el.png" width="24%" alt="Today in Greek">
 </p>
 <p align="center">
   <img src="docs/screenshots/10-widget.png" width="60%" alt="Home-screen widget">
@@ -44,48 +44,58 @@
 
 ## Στα ελληνικά
 
-Το Platebit είναι δωρεάν εφαρμογή Android για θερμίδες, διατροφή και προπόνηση, με AI Coach που μιλάει ελληνικά.
+Το Platebit είναι ένας **AI Coach στο κινητό** που μαζεύει σε ένα μέρος τη διατροφή, την προπόνηση, τη δραστηριότητα, τον ύπνο και τα φάρμακά σου, και σε βοηθάει να τα κάνεις πράξη. Μιλάει ελληνικά, ξέρει τα δικά σου δεδομένα και προτείνει αλλαγές που τις εγκρίνεις με ένα πάτημα.
 
-- Φωτογραφίζεις το πιάτο ή γράφεις «6 βραστά αυγά», και βλέπεις θερμίδες, πρωτεΐνη, υδατάνθρακες και λιπαρά.
-- Πλάνο γευμάτων από τις θερμίδες και την πρωτεΐνη σου, με λίστα αγορών ανά διάδρομο.
-- Πρόγραμμα προπόνησης και καταγραφή σετ με τα κιλά της προηγούμενης φοράς, βιβλιοθήκη 870+ ασκήσεων με φωτογραφίες, στατιστικά και ρεκόρ, μετρήσεις σώματος, και εισαγωγή/εξαγωγή στη μορφή του Hevy.
-- Βήματα με στόχο, ύπνος με στάδια και παλμοί από το Health Connect (κινητό, Pacer, Samsung Health, ρολόι).
-- AI Coach με chat και ζωντανή φωνή (και Gemini Live), που ξέρει τα δικά σου δεδομένα.
-- Υπενθυμίσεις για γεύματα, νερό, φάρμακα, προπόνηση και ζύγισμα, και εβδομαδιαία ανασκόπηση κάθε Κυριακή.
-- Health Connect για ρολόι, δαχτυλίδι και ζυγαριά, widget στην αρχική οθόνη, αναφορές PDF και αυτόματο αντίγραφο ασφαλείας.
-- Χωρίς λογαριασμό και χωρίς διαφημίσεις: τα δεδομένα μένουν στο κινητό σου.
+- **Coach:** chat και ζωντανή φωνή (και Gemini Live). Απαντάει από τα δικά σου νούμερα και ετοιμάζει αλλαγές ως κάρτες που δέχεσαι ή απορρίπτεις.
+- **Διατροφή:** φωτογραφίζεις το πιάτο ή γράφεις «6 βραστά αυγά» και βλέπεις θερμίδες και μακροθρεπτικά. Έχει πλάνο γευμάτων από τους στόχους σου και λίστα αγορών ανά διάδρομο.
+- **Προπόνηση:** πρόγραμμα από τις απαντήσεις σου ή δικές σου ρουτίνες με supersets και προθερμάνσεις. Βιβλιοθήκη 870+ ασκήσεων με φωτογραφίες, καταγραφή σετ με τα κιλά της προηγούμενης φοράς, χρονόμετρο ξεκούρασης και με κλειστή οθόνη, ρεκόρ και στατιστικά μετά από κάθε προπόνηση. Κοινοποίηση σε φίλους και εισαγωγή/εξαγωγή στη μορφή του Hevy.
+- **Δραστηριότητα και αποκατάσταση:** βήματα με στόχο, ύπνος με στάδια και καρδιακοί παλμοί από το Health Connect (κινητό, Pacer, Samsung Health, ρολόι). Επίσης μετρήσεις σώματος, ζυγαριά και τάση βάρους.
+- **Υγεία και ρουτίνα:** υπενθυμίσεις για φάρμακα με μηνιαίο ημερολόγιο, και υπενθυμίσεις για γεύματα, νερό, προπόνηση και ζύγισμα, η καθεμία με δικό της ήχο. Εβδομαδιαία ανασκόπηση κάθε Κυριακή και widget στην αρχική οθόνη.
+- **Ιστορικό και αναφορές:** κάθε μέρα, εβδομάδα και μήνας με τους στόχους σου, αναφορές PDF για διαιτολόγο, προπονητή ή γιατρό, και αυτόματο αντίγραφο ασφαλείας.
+- **Χωρίς λογαριασμό και χωρίς διαφημίσεις:** τα δεδομένα μένουν στο κινητό σου. Επιλέγεις εσύ ποιο AI χρησιμοποιείς.
 
 **Εγκατάσταση:** κατέβασε το [Platebit.apk](https://github.com/jemangr/platebit-releases/releases/latest/download/Platebit.apk) στο κινητό, άνοιξέ το και επίτρεψε την «Εγκατάσταση άγνωστων εφαρμογών» αν το ζητήσει. Οι ενημερώσεις έρχονται μέσα από την εφαρμογή. Χρειάζεται Android 12 ή νεότερο. Τι αλλάζει σε κάθε έκδοση: [CHANGELOG.md](CHANGELOG.md) και [Releases](https://github.com/jemangr/platebit-releases/releases).
 
 ## What it does
 
-**Track**
+Platebit is built around one coach that sees the whole picture: the meals you log, the sets you lift, how much you walked and slept, your weight and measurements, and your medicines if you let it. Everything below feeds it, and everything it suggests comes back as a change you accept or decline.
+
+**The coach**
+- 🤖 **AI Coach.** Tap the button in the middle of the screen to talk live, or hold it for the chat. It knows your meals, water, weigh-ins, body composition and measurements, steps, sleep and heart rate, your program and every set of the last two weeks, your meal plan, and the medicines you chose to share; it answers from your own numbers and prepares changes as cards you accept or decline. It only talks about food, training, sleep, your data and the app.
+- 🎙️ **Gemini Live (optional).** With a Gemini key, Live can use Gemini's own voice: it answers as you talk and you can interrupt it mid-sentence; what was said is added to the chat.
+- 📊 **Weekly review.** Sunday at 20:00: the week's calories against target, days on target, protein, water, trend weight, workouts and medicines, plus one concrete thing to try next week.
+
+**Nutrition**
 - 📸 **Photo to calories.** Take a picture of your plate (or a nutrition label) and get calories, protein, carbs and fat. Adjust the grams or the portion and it recalculates instantly.
 - ✍️ **Or just say it.** Tap + and write "6 boiled eggs" or "a pork gyros souvlaki, no-oil pita, tomato, yogurt": the AI splits it into foods with grams for you to check.
 - 📦 **Packaged food done right.** Platebit reads the package and serving size, so one tap logs 1 serving, ½ or ¼ package, the whole package or 100 g. Type label values as printed: per 100 g, per package or per serving.
-- 👟 **Steps, sleep and heart rate.** From Health Connect (the phone itself, Pacer, Samsung Health or a watch): steps against a daily goal you can change, the day's workouts, sleep with its stages and the last 7 nights, heart rate lowest to highest with the last reading.
-- 📊 **One clean diary.** Calories, macros, water, activity and a weight trend you can swipe through day by day; add food or a weigh-in to any past day.
-- 🗓️ **History.** Days, weeks and months: calories against your target, macros, water, steps, sleep, workouts and trend weight, with green or orange marks for each goal (protein, water, steps).
-- 📄 **Reports and export.** A week or month as a PDF for your dietitian, trainer or doctor, daily totals as CSV for Excel, and a full backup that is always free.
-- 💾 **Automatic backup.** Every week to a folder you pick (a synced Google Drive or Nextcloud folder keeps it off the phone too), keeping the last 8. Backups hold meals, water, weight, profile, settings, medicines, workouts, meal plans and your program; never API keys or photos.
-
-**Plan and coach**
 - 🎯 **A plan built from your answers.** Setup asks your goal (lose fat, recomposition, build muscle, maintain, performance, health), training history, your day (school or work, whether you can bring food), supplements and coffee, and health notes kept only for safety. You get calories and macros, carb cycling for training days, a water goal that stops before sleep and respects a doctor's fluid limit, and meal times around your day.
 - ✏️ **Your numbers win.** Prefer your own calories, macros, water or meal times? Type them in; Platebit marks them as yours and follows them.
 - 🍽️ **Meal plan.** A week of meals from your calories and protein with common Greek foods, no AI needed: lock what you like, swap the rest, add your own, approve the week. Away from home without a fridge? It suggests foods for your bag.
 - 🛒 **Shopping list.** The week's plan as one list by aisle: the same food across days adds up, cooked rice, pasta, legumes, meat and fish become raw or dry amounts, eggs, pitas and cans are counted. Tick items as you shop (kept until next week) or share the list as text.
+
+**Training**
 - 🏋️ **Training program.** A suggested program from your days, level, gym or home and goal (sets, reps, rest and when to add weight), or type your own one exercise per line.
-- 📝 **Log your workouts.** Start a workout and every set is filled in with last time's weight and reps; tick a set to start the rest timer, which keeps running in the notification with the screen off and vibrates when the rest is over. Warm-ups, drop sets, sets to failure and RPE; supersets go straight to the next exercise and rest after the round. When every set reached the top of the range it says how much to add (2.5 kg upper body, 5 kg lower), and a set that beats your best is marked PR. Saved as you go, so leaving the app mid-workout loses nothing. At the end: a summary with the records you beat, and a picture to share (Pro). Already on Hevy? Import its CSV export, set types included. The AI Coach sees the last two weeks of what you lifted.
-- 📚 **Exercise library.** 870+ exercises with photos, muscles, equipment and instructions; search, filter by muscle and equipment, or create your own. Pick several at once for a routine, or add and replace exercises mid-workout.
-- 📈 **Stats after every workout.** Time, sets, reps and volume against last time, records, muscles worked, each exercise and your week; share it as a picture with the app's link, or export every workout as CSV in Hevy's columns.
-- 📏 **Body measurements.** Waist, hips, arms, thighs and more, with a line over time; the coach sees them.
 - 🗂️ **Routines and records.** Build your own program like a gym app: exercises in order, sets, reps, rest and warm-ups for each, supersets by linking an exercise to the next, or start from the suggested one. Every exercise has its history: heaviest weight, best estimated 1RM and best session volume, a chart of your estimated 1RM over time, and every session.
-- 🎙️ **Gemini Live (optional).** With a Gemini key, Live can use Gemini's own voice: it answers as you talk and you can interrupt it mid-sentence; what was said is added to the chat.
-- 🤖 **AI Coach.** Tap the button in the middle of the screen to talk live, or hold it for the chat. It knows your meals, water, weigh-ins, body composition, activity, meal plan and program, answers from your own numbers and prepares changes as cards you accept or decline. It only talks about food, training, sleep, your data and the app.
+- 📚 **Exercise library.** 870+ exercises with photos, muscles, equipment and instructions; search, filter by muscle and equipment, or create your own. Pick several at once for a routine, or add and replace exercises mid-workout.
+- 📝 **Log your workouts.** Start a workout and every set is filled in with last time's weight and reps; tick a set to start the rest timer, which keeps running in the notification with the screen off and vibrates when the rest is over. Warm-ups, drop sets, sets to failure and RPE; supersets go straight to the next exercise and rest after the round. When every set reached the top of the range it says how much to add (2.5 kg upper body, 5 kg lower), and a set that beats your best is marked PR. Saved as you go, so leaving the app mid-workout loses nothing. At the end: a summary with the records you beat, and a picture to share (Pro). Already on Hevy? Import its CSV export, set types included. The AI Coach sees the last two weeks of what you lifted.
+- 📈 **Stats after every workout.** Time, sets, reps and volume against last time, records, muscles worked, each exercise and your week; share it as a picture with the app's link, or export every workout as CSV in Hevy's columns.
+
+**Activity, sleep and body**
+- 👟 **Steps, sleep and heart rate.** From Health Connect (the phone itself, Pacer, Samsung Health or a watch): steps against a daily goal you can change, the day's workouts, sleep with its stages and the last 7 nights, heart rate lowest to highest with the last reading.
+- 📏 **Body measurements.** Waist, hips, arms, thighs and more, with a line over time; the coach sees them.
+- ⚖️ **Weight trend and smart scale.** Weigh-ins from you, Health Connect or a Xiaomi scale, smoothed into a trend; body composition estimates on the Body screen.
+
+**Health and routine**
 - 💊 **Medication reminders.** Each medicine or supplement gets a label, dose, days and times. The notification lists them in detail with Took them / Forgot; the diary asks once per part of the day ("Morning medicines", one tap for all of them), then clears and says what's next. A month calendar shows each day green (all taken), orange (some missed) or red (none); tap a day to see which. You decide, per medicine, whether the AI Coach may see it.
-- 📱 **Home-screen widget.** Calories and protein left, water with a +250 ml button that logs without opening the app, and today's medicines with the next dose. Tap it to open the diary.
-- 📊 **Weekly review.** Sunday at 20:00: the week's calories against target, days on target, protein, water, trend weight, workouts and medicines, plus one concrete thing to try next week.
 - 🔔 **Reminders, each with its own switch and sound** (alarm tones too), on the phone and the watch or the phone only. Meals ("did you follow the plan?" with Yes / Didn't eat / Ate something else), water (only when you're behind, stopping before sleep), protein, training days, weigh-ins, new versions, and "new features explained": after an update, one notification a day that explains a feature in detail.
+- 📱 **Home-screen widget.** Calories and protein left, water with a +250 ml button that logs without opening the app, and today's medicines with the next dose. Tap it to open the diary.
+
+**Your history and your data**
+- 📊 **One clean diary.** Calories, macros, water, activity and a weight trend you can swipe through day by day; add food or a weigh-in to any past day.
+- 🗓️ **History.** Days, weeks and months: calories against your target, macros, water, steps, sleep, workouts and trend weight, with green or orange marks for each goal (protein, water, steps).
+- 📄 **Reports and export.** A week or month as a PDF for your dietitian, trainer or doctor, daily totals as CSV for Excel, and a full backup that is always free.
+- 💾 **Automatic backup.** Every week to a folder you pick (a synced Google Drive or Nextcloud folder keeps it off the phone too), keeping the last 8. Backups hold meals, water, weight, profile, settings, medicines, workouts, meal plans and your program; never API keys or photos.
 
 **Your devices and your AI**
 - ⌚ **Health Connect.** Steps, workouts, sleep and heart rate from your watch or ring, and weigh-ins from scales such as Withings or Samsung. Platebit only reads, and its "How to connect correctly" guide shows which app writes what, so food and workouts are never counted twice; the same workout from two apps counts once.
@@ -109,7 +119,7 @@ On by default (you can turn it off in **Settings → Food database**), Platebit 
 
 ## The AI Coach (beta)
 
-Tap the **AI Coach** button in the middle of the Diary, Scan, Body or Settings screen to talk with it **live** (the first tap asks before turning it on): it listens, answers aloud and listens again, like a phone call, and a short "yes" or "no" answers its proposals. Hold the button, or pull down on a screen and hold until the bubble pops, for the text chat: a chat slides in that knows your meals, water, weigh-ins and body composition, so you can ask how you're doing and get advice based on your own numbers. Ask it to log a meal, water or a weigh-in, or to change a target, and it prepares the change as a card you accept or decline. Mention a brand (say, a Lacta) and it looks the product up on Open Food Facts first, so the card uses the real label values. **Talk to it:** tap the AI Coach button for a live conversation, or tap the mic in the chat, and just speak (Greek or English, set in Settings). Your phone turns your voice into text, nothing is recorded or kept, and the coach reads its answer back aloud (turn that off with the speaker button). The coach only talks about food, training, sleep, water, your data and the app. It uses the AI engine you already set up and is off by default. For now Platebit is tuned for Greece: the AI expects Greek foods and brands, and Greek products come first in searches.
+Tap the **AI Coach** button in the middle of the Diary, Scan, Body or Settings screen to talk with it **live** (the first tap asks before turning it on): it listens, answers aloud and listens again, like a phone call, and a short "yes" or "no" answers its proposals. Hold the button, or pull down on a screen and hold until the bubble pops, for the text chat: a chat slides in that knows your food, training, activity, sleep and body numbers, so you can ask how you're doing and get advice based on your own numbers. Ask it to log a meal, water or a weigh-in, or to change a target, and it prepares the change as a card you accept or decline. Mention a brand (say, a Lacta) and it looks the product up on Open Food Facts first, so the card uses the real label values. **Talk to it:** tap the AI Coach button for a live conversation, or tap the mic in the chat, and just speak (Greek or English, set in Settings). Your phone turns your voice into text, nothing is recorded or kept, and the coach reads its answer back aloud (turn that off with the speaker button). The coach only talks about food, training, sleep, water, your data and the app. It uses the AI engine you already set up and is off by default. For now Platebit is tuned for Greece: the AI expects Greek foods and brands, and Greek products come first in searches.
 
 ## Optional: Xiaomi smart scale
 
