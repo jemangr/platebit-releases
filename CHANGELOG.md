@@ -2,6 +2,20 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.21.0 (59)
+- **Exercise library with photos** (free-exercise-db, public domain): 870+ exercises with two photos each (start and end position), main and helper muscles, equipment, level and step-by-step instructions. Photos load when an exercise is shown and are kept on the phone, so the app doesn't grow. Search by name, filter by muscle group and equipment, recent ones first, tap ⓘ for how to do it. **Create your own** exercise (name, main muscle, equipment) when one is missing. The picker opens from Add exercise in the routine editor (several at once) and in a workout in progress, where an exercise can also be replaced or removed. Thumbnails in routines, workouts and stats. Names stay in English.
+- **Stats after every workout**, full screen, and from any logged workout (Training, the diary's Activity card): minutes, working sets, reps and volume against the last time you did the same workout, the records it beat (one line per exercise), sets per muscle group (helpers count half), each exercise with its best set and volume change, and the week so far: workouts against your training days, sets, kilos and weeks in a row with a workout.
+- **Share this workout** (Pro): a new picture with the four numbers, muscles, best set of each exercise and records, the app's name and its link; the message under it (the caption on WhatsApp and Viber) repeats the numbers with the link.
+- **Export workouts (CSV)** in Hevy's columns, so they open in a spreadsheet and go back into Platebit, Hevy or Strong.
+- **Body measurements** (Training → Body measurements): waist, hips, chest, neck, shoulders, arm, forearm, thigh and calf, one per part and day, with a line over time and the change since the first. In the backup, and the AI Coach sees them.
+- **Activity card**: the day's workouts, logged in Platebit (tap for the stats) and from Health Connect (the same session from the watch counts once); steps against a daily goal with a progress line. Tap **sleep** for bed and wake time, the stages (deep, light, REM, awake) and the last 7 nights; tap **heart rate** for lowest, highest, average, resting and the last reading with its time, and the last 7 days. Without any activity data the card offers to connect Health Connect.
+- **Daily step goal for everyone** (Settings → Goals → Daily steps): a suggestion you can change; with two weeks of steps, about 10% above what you already walk (5,000–12,000), otherwise 8,000 (7,000 from 60, 10,000 for walkers). "Walking" is now a training type in setup.
+- **History** now has steps, sleep, active calories and workouts per day, and goal chips that turn green or orange: protein, water and steps per day, and how many days of the week or month each goal was reached.
+- **Medicines calendar** (Medications): a month with every day green (all taken), orange (some missed) or red (none taken); tap a day to see what wasn't taken and what was. Today is coloured once everything due is taken.
+- **Water**: an arrow next to +500 ml opens 150 ml to 1.5 L; the amount you pick is logged and becomes the button's default.
+- **Sounds and watch** (Settings → Reminders): a sound for each kind of notification from Android's list, alarm tones included, and phone and watch or phone only. "Watch only" comes with the watch app (phase C).
+- Backups include your own exercises and body measurements.
+
 ## 1.20.0 (58)
 - **Routines like a gym app** (Training → My own → Write or Edit): exercises in order with sets, reps, rest (1:00 to 3:00 or none) and warm-up sets; link an exercise to the next for a superset; move up or down; start from the suggested program; paste lines as text as before.
 - **Set types while logging:** tap a set's number for warm-up (W), drop set (D), to failure (F), RPE 6–10, or remove it. Warm-ups are pre-filled at half the working weight and never count for records, volume or the next weight. Hevy imports keep their set types and RPE.
