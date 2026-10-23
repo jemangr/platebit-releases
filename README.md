@@ -17,18 +17,22 @@
   <img src="docs/screenshots/1-diary.png" width="24%" alt="Diary: calories, macros, water, medications and weight trend">
   <img src="docs/screenshots/2-meal-plan.png" width="24%" alt="Meal plan built from calories and protein">
   <img src="docs/screenshots/3-training.png" width="24%" alt="Suggested training program">
-  <img src="docs/screenshots/4-history.png" width="24%" alt="History of weeks">
-</p>
-<p align="center">
-  <img src="docs/screenshots/5-medications.png" width="24%" alt="Medication reminders">
-  <img src="docs/screenshots/6-ai-setup.png" width="24%" alt="Step-by-step AI setup">
-  <img src="docs/screenshots/7-settings.png" width="24%" alt="Settings">
-  <img src="docs/screenshots/9-groceries-el.png" width="24%" alt="The shopping list in Greek">
-</p>
-
-<p align="center">
   <img src="docs/screenshots/11-workout.png" width="24%" alt="Logging a workout">
-  <img src="docs/screenshots/10-widget.png" width="49%" alt="Home-screen widget">
+</p>
+<p align="center">
+  <img src="docs/screenshots/4-history.png" width="24%" alt="History of weeks">
+  <img src="docs/screenshots/5-medications.png" width="24%" alt="Medication reminders">
+  <img src="docs/screenshots/9-groceries.png" width="24%" alt="Shopping list from the meal plan">
+  <img src="docs/screenshots/6-ai-setup.png" width="24%" alt="Step-by-step AI setup">
+</p>
+<p align="center">
+  <img src="docs/screenshots/8-health-guide.png" width="24%" alt="Health Connect guide">
+  <img src="docs/screenshots/7-settings.png" width="24%" alt="Settings">
+  <img src="docs/screenshots/1-diary-el.png" width="24%" alt="The diary in Greek">
+  <img src="docs/screenshots/11-workout-el.png" width="24%" alt="Logging a workout in Greek">
+</p>
+<p align="center">
+  <img src="docs/screenshots/10-widget.png" width="60%" alt="Home-screen widget">
 </p>
 
 
