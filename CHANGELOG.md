@@ -2,6 +2,9 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.22.2 (62)
+- **Meal scans never think**: DeepSeek scans send thinking disabled, Gemini scans ask for no thinking (2.x) or "minimal" (newer), falling back to "low" and then the default if a model refuses. The DeepSeek thinking setting now applies to the AI Coach only.
+
 ## 1.22.1 (61)
 - **Gemini Live can log and change things** like the chat: it calls functions that put the same Accept cards on the call screen (and in the chat), and a spoken yes or no answers them. Before, the call's rules said it couldn't change anything and sent you to the plus button. A Live model that refuses functions falls back to talking only.
 - **Meal scans can't hang for minutes**: each engine gets 60 seconds, then the backup engine (if set) or an error. After 8 seconds the progress screen shows which engine and model it's waiting on and for how long.
