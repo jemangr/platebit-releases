@@ -21,8 +21,11 @@
 </p>
 <p align="center">
   <img src="docs/screenshots/16-activity.png" width="24%" alt="Steps, the day's workouts, sleep stages and heart rate">
+  <img src="docs/screenshots/19-readiness-steps.png" width="24%" alt="Readiness before a workout and the last 14 days of steps">
   <img src="docs/screenshots/12-exercise-history.png" width="24%" alt="Exercise history with records and estimated 1RM">
   <img src="docs/screenshots/2-meal-plan.png" width="24%" alt="Meal plan built from calories and protein">
+</p>
+<p align="center">
   <img src="docs/screenshots/4-history.png" width="24%" alt="History with goals per day, week and month">
 </p>
 <p align="center">
@@ -49,7 +52,7 @@
 - **Coach:** chat και ζωντανή φωνή (και Gemini Live). Απαντάει από τα δικά σου νούμερα και ετοιμάζει αλλαγές ως κάρτες που δέχεσαι ή απορρίπτεις.
 - **Διατροφή:** φωτογραφίζεις το πιάτο ή γράφεις «6 βραστά αυγά» και βλέπεις θερμίδες και μακροθρεπτικά. Έχει πλάνο γευμάτων από τους στόχους σου και λίστα αγορών ανά διάδρομο.
 - **Προπόνηση:** πρόγραμμα από τις απαντήσεις σου ή δικές σου ρουτίνες με supersets και προθερμάνσεις. Βιβλιοθήκη 870+ ασκήσεων με φωτογραφίες, καταγραφή σετ με τα κιλά της προηγούμενης φοράς, χρονόμετρο ξεκούρασης και με κλειστή οθόνη, ρεκόρ και στατιστικά μετά από κάθε προπόνηση. Κοινοποίηση σε φίλους και εισαγωγή/εξαγωγή στη μορφή του Hevy.
-- **Δραστηριότητα και αποκατάσταση:** βήματα με στόχο, ύπνος με στάδια και καρδιακοί παλμοί από το Health Connect (κινητό, Pacer, Samsung Health, ρολόι). Επίσης μετρήσεις σώματος, ζυγαριά και τάση βάρους.
+- **Δραστηριότητα και αποκατάσταση:** βήματα με στόχο από το ίδιο το κινητό ή από το Health Connect, ύπνος με στάδια, παλμοί και HRV, και ετοιμότητα πριν την προπόνηση (ανέβασε, κράτα ή χαλαρά). Επίσης μετρήσεις σώματος, ζυγαριά και τάση βάρους.
 - **Υγεία και ρουτίνα:** υπενθυμίσεις για φάρμακα με μηνιαίο ημερολόγιο, και υπενθυμίσεις για γεύματα, νερό, προπόνηση και ζύγισμα, η καθεμία με δικό της ήχο. Εβδομαδιαία ανασκόπηση κάθε Κυριακή και widget στην αρχική οθόνη.
 - **Ιστορικό και αναφορές:** κάθε μέρα, εβδομάδα και μήνας με τους στόχους σου, αναφορές PDF για διαιτολόγο, προπονητή ή γιατρό, και αυτόματο αντίγραφο ασφαλείας.
 - **Χωρίς λογαριασμό και χωρίς διαφημίσεις:** τα δεδομένα μένουν στο κινητό σου. Επιλέγεις εσύ ποιο AI χρησιμοποιείς.
@@ -61,6 +64,7 @@
 Platebit is built around one coach that sees the whole picture: the meals you log, the sets you lift, how much you walked and slept, your weight and measurements, and your medicines if you let it. Everything below feeds it, and everything it suggests comes back as a change you accept or decline.
 
 **The coach**
+- 🔁 **The coach changes things for you.** Ask it and it prepares the change as a card: a meal's grams, macros, step goal, a measurement, your day's times, reminders, a planned meal, or your program (sets, reps, rest, adding or swapping an exercise, which days each workout is on, next time's weight). Medicines, settings and keys stay yours.
 - 🤖 **AI Coach.** Tap the button in the middle of the screen to talk live, or hold it for the chat. It knows your meals, water, weigh-ins, body composition and measurements, steps, sleep and heart rate, your program and every set of the last two weeks, your meal plan, and the medicines you chose to share; it answers from your own numbers and prepares changes as cards you accept or decline. It only talks about food, training, sleep, your data and the app.
 - 🎙️ **Gemini Live (optional).** With a Gemini key, Live can use Gemini's own voice: it answers as you talk and you can interrupt it mid-sentence; what was said is added to the chat.
 - 📊 **Weekly review.** Sunday at 20:00: the week's calories against target, days on target, protein, water, trend weight, workouts and medicines, plus one concrete thing to try next week.
@@ -79,10 +83,12 @@ Platebit is built around one coach that sees the whole picture: the meals you lo
 - 🗂️ **Routines and records.** Build your own program like a gym app: exercises in order, sets, reps, rest and warm-ups for each, supersets by linking an exercise to the next, or start from the suggested one. Every exercise has its history: heaviest weight, best estimated 1RM and best session volume, a chart of your estimated 1RM over time, and every session.
 - 📚 **Exercise library.** 870+ exercises with photos, muscles, equipment and instructions; search, filter by muscle and equipment, or create your own. Pick several at once for a routine, or add and replace exercises mid-workout.
 - 📝 **Log your workouts.** Start a workout and every set is filled in with last time's weight and reps; tick a set to start the rest timer, which keeps running in the notification with the screen off and vibrates when the rest is over. Warm-ups, drop sets, sets to failure and RPE; supersets go straight to the next exercise and rest after the round. When every set reached the top of the range it says how much to add (2.5 kg upper body, 5 kg lower), and a set that beats your best is marked PR. Saved as you go, so leaving the app mid-workout loses nothing. At the end: a summary with the records you beat, and a picture to share (Pro). Already on Hevy? Import its CSV export, set types included. The AI Coach sees the last two weeks of what you lifted.
+- 📅 **A workout for each day.** Put each workout on its days; the Today card and the training reminders follow the week plan.
+- 🔋 **Readiness before you train.** Push, hold or go easy, from sleep, resting heart rate, HRV and yesterday's food; one tap makes the sets lighter on a bad day.
 - 📈 **Stats after every workout.** Time, sets, reps and volume against last time, records, muscles worked, each exercise and your week; share it as a picture with the app's link, or export every workout as CSV in Hevy's columns.
 
 **Activity, sleep and body**
-- 👟 **Steps, sleep and heart rate.** From Health Connect (the phone itself, Pacer, Samsung Health or a watch): steps against a daily goal you can change, the day's workouts, sleep with its stages and the last 7 nights, heart rate lowest to highest with the last reading.
+- 👟 **Steps, sleep and heart rate.** Steps from the phone's own counter, no other app needed, or from Health Connect (Pacer, Samsung Health or a watch), which also brings sleep, heart rate and HRV: steps against a daily goal you can change, the day's workouts, sleep with its stages and the last 7 nights, heart rate lowest to highest with the last reading.
 - 📏 **Body measurements.** Waist, hips, arms, thighs and more, with a line over time; the coach sees them.
 - ⚖️ **Weight trend and smart scale.** Weigh-ins from you, Health Connect or a Xiaomi scale, smoothed into a trend; body composition estimates on the Body screen.
 
