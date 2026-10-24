@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.22.1 (61)
+- **Gemini Live can log and change things** like the chat: it calls functions that put the same Accept cards on the call screen (and in the chat), and a spoken yes or no answers them. Before, the call's rules said it couldn't change anything and sent you to the plus button. A Live model that refuses functions falls back to talking only.
+- **Meal scans can't hang for minutes**: each engine gets 60 seconds, then the backup engine (if set) or an error. After 8 seconds the progress screen shows which engine and model it's waiting on and for how long.
+
 ## 1.22.0 (60)
 - **The AI Coach can change almost everything**, always as a card you accept: a meal's grams, macro and step targets, a body measurement, wake, sleep and training times, reminders on or off, a meal in the meal plan, and the training program (sets, reps, rest and warm-ups; adding, removing or swapping an exercise; which days each workout is on; the weight for next time, filled in when you start). Medicines, settings, backups and AI keys stay yours to change. A program change to the suggested program makes it your own copy.
 - **A workout for each day of the week** (Training): pick the days under each workout. The Today card shows today's workout with Start (or a rest day), and the training reminders follow those days and name the workout.
