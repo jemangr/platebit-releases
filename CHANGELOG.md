@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.25.0 (66)
+- **Routine library** (Training → Routines): save any number of routines outside the program, put any of them on any weekday with the day chips, start one or an empty workout. The week plan, the Today card, the home training card, the training reminder and the coach all see them; switching program keeps the routines' days. Names stay unique.
+- **Save as a routine** on a finished workout's stats screen: its exercises, working sets, reps, rest, warm-ups and supersets.
+
 ## 1.24.1 (65)
 - **Report a problem** (Me → Help): the app version, phone, the last crashes (kept on the phone) and the app's own recent warnings and errors as a text file to share; no meals, weights, health data, medicines, keys or chat, and key-like strings are masked.
 - **End-to-end tests on an emulator** in CI on every push: setup with the consent, every tab and the meal plan, with screenshots, logcat and crashes kept with the run.

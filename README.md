@@ -33,6 +33,7 @@
 </p>
 <p align="center">
   <img src="docs/screenshots/3-training.png" width="24%" alt="Training program">
+  <img src="docs/screenshots/24-routines.png" width="24%" alt="Routine library: any routine on any day">
   <img src="docs/screenshots/17-meds-calendar.png" width="24%" alt="Medicines calendar">
   <img src="docs/screenshots/15-measurements.png" width="24%" alt="Body measurements">
   <img src="docs/screenshots/9-groceries.png" width="24%" alt="Shopping list from the meal plan">
