@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.29.0 (73)
+- **Hevy parity, phase 2 (progress)**: per-exercise charts with a metric (estimated 1RM, heaviest weight, best set volume, session volume, total reps/seconds) and a range (1 month, 3 months, 1 year, all); set records (heaviest weight per rep count, only real records); a 1RM calculator with a 100–50% table and Epley reps; a training calendar with tappable days and a weeks-in-a-row streak; sets per muscle group over 7/30/91 days against the period before. Both are linked from Progress → More.
+- The meal plan header keeps its title on one line (the week arrows sit next to the week).
+- e2e: the meal-plan step goes back with the screen's Back button.
+
 ## 1.28.0 (72)
 - **Hevy parity, phase 1 (in the gym)**: a "Previous" column per set (last session's set in the same place, warm-ups matched to warm-ups; tap to copy); plate calculator (bar 20/15/10/none, the gym's plates, a drawing of one side, the closest loadable weight); warm-up calculator (2/3/4 steps from the first working set, rounded to 2.5 kg, never under the bar); notes per exercise for the session or pinned to the exercise, and a workout note; move exercises up/down mid-workout; a record toast and haptic the moment a set beats your best; a countdown for timed sets that ticks the set and starts the rest; rest −15″/+15″; correcting a saved workout (sets and notes through the logger, name/day/start/length, delete).
 - Hevy CSV import and export carry workout descriptions, exercise notes and superset ids. Pinned notes and the plate setup go into the backup.
