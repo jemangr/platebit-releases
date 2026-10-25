@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.32.0 (77)
+- **Lifestyle** (`CoachingProfile.life`): job (sitting ×1.0, standing ×1.05, manual ×1.12 on the burn, skipped when the smart target measured it), stress and shifts, asked in setup and told to the coach.
+- **Supplements**: casein; creatine's start date (chips) with an optional daily reminder created under Medicines; the last coffee's time, flagged when under 6 h before bed (`SupplementNotes`), for the coach's sleep advice.
+- **Notes by the weight forecast** (`GoalNotes`): what building muscle (+5/7/10% by level) or recomposition (up to −10%) means for the scale, and creatine's water weight during its first 4 weeks.
+
 ## 1.31.0 (76)
 - **Share cards in three looks and two sizes** (`CardLook`): dark, light (deeper green accent, dark wordmark) or clear (transparent PNG, translucent tiles, shadowed text, for stickers over a photo), as a 4:5 post or a 9:16 story; a preview dialog before every picture share (day, progress, workout), remembering the last choice.
 
