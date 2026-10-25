@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.28.0 (72)
+- **Hevy parity, phase 1 (in the gym)**: a "Previous" column per set (last session's set in the same place, warm-ups matched to warm-ups; tap to copy); plate calculator (bar 20/15/10/none, the gym's plates, a drawing of one side, the closest loadable weight); warm-up calculator (2/3/4 steps from the first working set, rounded to 2.5 kg, never under the bar); notes per exercise for the session or pinned to the exercise, and a workout note; move exercises up/down mid-workout; a record toast and haptic the moment a set beats your best; a countdown for timed sets that ticks the set and starts the rest; rest −15″/+15″; correcting a saved workout (sets and notes through the logger, name/day/start/length, delete).
+- Hevy CSV import and export carry workout descriptions, exercise notes and superset ids. Pinned notes and the plate setup go into the backup.
+
 ## 1.27.0 (71)
 - **Logo bar on the tabs**: Today, Plan, Progress and Me share a fixed bar (stays while scrolling): share on the left, the Platebit wordmark centred, then report a problem (beta builds only), notifications and settings. The bell and gear left the page headers; the camera keeps its full screen.
 - **Share from each tab** (`ShareCards`): a day card picture (calorie ring, macros, meals, water, steps, workout), today's meal plan and workout as text, a progress card picture (trend line, goal, 3-month forecast) and an invitation. No medicines or health details on any of them.
