@@ -2,6 +2,15 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.24.0 (64)
+- **Meals you always have**: "Always this" on a planned meal keeps it in its slot on the chosen weekdays (coffee every morning, a koulouri on school days, yogurt with honey at night). Every new plan keeps it and the other meals share what's left of the day's calories and protein, each between half and twice its usual size.
+- **Meals you don't have**: "Meals of the day" (the sliders icon) turns a slot off for all or some weekdays, e.g. no afternoon snack; its share goes to the others.
+- **The day closes on target**: whenever a meal is logged, from the plan or not, today's meals still to come are resized to what's left (marked "Resized to what you ate earlier today"). "Another option" keeps the meal's size.
+- **Weight forecast** (Progress): the weight in 1, 3, 6 and 12 months if the plan is followed exactly, day by day from the calorie target and the burn at each weight, stopping at the goal, with a likely range; and how the trend compares with what the plan expected since the start. Recomputed at every weigh-in; the coach knows it too, and the meal-plan rules.
+- **Your own meal with AI**: the AI fills in the calories and macros from the meal's name.
+- **Onboarding above the keyboard**: the page ends above the keyboard, so the field being typed in and the Continue button stay reachable.
+- Meal-plan rules are in the full backup.
+
 ## 1.23.0 (63)
 - **Five tabs**: Today, Plan, AI Coach (middle), Progress, Me. Plan gathers today's meals and workout with the meal plan, shopping list, program and exercise library; Progress the weight trend, the training week, recent workouts, history, measurements and reports; Me is Settings with the new logo.
 - **The Now card** on Today: the one next thing with one button, most urgent first: a workout in progress, medicines due, a meal that's due and not logged (with "Ate it as planned" when there's a plan, or "Didn't eat"), today's workout around the gym time, the morning weigh-in, water when 400 ml or more behind; otherwise "All done for now" and the next meal.
