@@ -2,6 +2,15 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.42.0 (91)
+- **Free food analyses without a key**: an install with no AI set up gets 10 a month through Platebit Pro AI Cloud after an OK on the scan screen (photo through api.platebit.app to DeepSeek, not kept). The app makes a random install key (`pf-` + 32 hex, not in backups); the worker keeps only its SHA-256 (`free_users`), counts use under the negative id, allows scans only, `free_month_scans` / `free_day_requests` / `free_total_month_usd` / `free_day_new` (new installs per connection a day, salted daily hash) in the admin page. Used up → an offer of a Pro AI Cloud place or an own key.
+- **Streaks and milestones** (`Achievements`): days in a row with food logged, weeks in a row with a workout, 20 milestones (logging, training, nutrition, body), on the Progress tab and a new screen.
+- **Month and year recap** with a share card (`ShareCards.renderRecap`): days logged, workouts, volume, average kcal and protein, trend weight, best streak, most-done exercise.
+- **Week in review** on Today on Sunday (the week so far) and Monday (the week before): wins and misses from the numbers, "Ask the coach what to change" opens the chat with that question.
+- **Ordering in or eating out**: the coach (chat and Live) suggests 2-3 dishes for that kind of place against what's left of the day; scans and the coach expect other cuisines too; 60 taverna and delivery dishes in the offline food list.
+- Resistance-band exercises default to reps only; the kind texts mention cables and bands.
+- Watch screenshots (Robolectric + Roborazzi for the Wear app and the food tile via the tiles renderer) and the GitHub social preview.
+
 ## 1.41.0 (90)
 - **How each exercise is logged** (`TrackKind`: weight and reps, reps only, assisted, weighted bodyweight, time, distance and time), guessed from the name (whole-word cardio match, library category) and kept per exercise (`WorkoutStore.kinds`, in backups as `exerciseKinds`). Cardio sets keep `LoggedSet.km` with the seconds in `reps`; pace and km/h shown; records for longest distance, longest time and best pace; volume, 1RM and weight records only for lifted kinds; Hevy import/export carries distance.
 - One tap applies the suggested next weight to the sets left.
