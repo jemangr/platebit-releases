@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.30.0 (75)
+- **Routine folders**: `Workout.folder`; Routines groups them under foldable headers (rename, or empty the name to un-folder); ⋮ per routine: Share, Move to folder, Duplicate, Delete (its week-plan days go too).
+- **Routines by link and QR, no server**: `RoutineShare` packs the routine (deflate + base64url) after `https://platebit.app/r#`, so it never reaches a web server; the share sheet sends the message with a QR picture, and the dialog shows the QR to scan. Import from a pasted message (the clipboard is read when it holds one) or a picture of the QR (ZXing); names and numbers are bounded. `platebit://r` and `https://platebit.app/r` open the app with the import prompt (the https one opens directly once the site serves assetlinks.json).
+- e2e: a picture right after tapping Me.
+
 ## 1.29.1 (74)
 - **Live animation**: an aurora orb (three shifting colour blobs, a bright heart), a ring of 72 sound bars that follows the user's voice while listening and the coach's own voice (RMS of the played audio) while speaking, orbiting specks, and two comets while thinking; still frames for screenshots (`frozenAt`).
 - **The coach's exercise changes reach the workout in progress**: replace, add and remove apply to the running session of that workout too (never to exercises with done sets).
