@@ -2,6 +2,9 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.31.0 (76)
+- **Share cards in three looks and two sizes** (`CardLook`): dark, light (deeper green accent, dark wordmark) or clear (transparent PNG, translucent tiles, shadowed text, for stickers over a photo), as a 4:5 post or a 9:16 story; a preview dialog before every picture share (day, progress, workout), remembering the last choice.
+
 ## 1.30.0 (75)
 - **Routine folders**: `Workout.folder`; Routines groups them under foldable headers (rename, or empty the name to un-folder); ⋮ per routine: Share, Move to folder, Duplicate, Delete (its week-plan days go too).
 - **Routines by link and QR, no server**: `RoutineShare` packs the routine (deflate + base64url) after `https://platebit.app/r#`, so it never reaches a web server; the share sheet sends the message with a QR picture, and the dialog shows the QR to scan. Import from a pasted message (the clipboard is read when it holds one) or a picture of the QR (ZXing); names and numbers are bounded. `platebit://r` and `https://platebit.app/r` open the app with the import prompt (the https one opens directly once the site serves assetlinks.json).
