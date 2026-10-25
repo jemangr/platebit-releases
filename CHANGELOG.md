@@ -2,6 +2,12 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.40.0 (88)
+- **Platebit Pro AI Cloud** (`cloud/`, Cloudflare Worker on api.platebit.app, D1): the app's OpenAI-format requests go through to DeepSeek (`deepseek-flash`, thinking capped, max 4096 out); a tester's code (`pb-…`, only its SHA-256 stored) is the key; per tester 150 food analyses (a photo, or `X-Platebit-Kind: scan`) and 300 coach messages a month, 60 requests a day and $1.50 a month as caps, a monthly total, an off switch; usage counters only, no bodies or headers logged. Admin page at `/admin` (ADMIN_TOKEN): testers, codes, use, limits, prices. Deployed by `.github/workflows/cloud.yml` (node tests, then `wrangler deploy`).
+- App: new engine `Provider.CLOUD` (before Custom): model picked by the server, Cloud refusals in the user's language, what's left this month as the balance (`/v1/me`). Setup offers the free beta places (`/v1/signup`): a name and one tap make the code, save it and make it the engine; one sign-up per connection a day, places set in the admin page.
+- **Google Drive backup** (`DriveBackup`, `drive.file` scope via the Identity AuthorizationClient, Drive v3 over OkHttp): weekly on Wi-Fi, the same full backup as the folder one in a visible "Platebit backups" folder, the last 8 kept, same-day replaced; Settings → Data. Setup's welcome screen: Restore from Google Drive, picking one of the backups.
+- **Wear OS food tile and complications**: the phone sends today's totals and targets (`WatchFood`, on every meal and plan change); the watch shows a calories ring with protein, carbs and fat (`FoodTile`, ProtoLayout material) and four complications (ranged value / short text), refreshed when the totals change and every 30 minutes, 0 on a new day.
+
 ## 1.39.0 (87)
 - Wear OS: **rest by heart rate** (opt-in, Devices → Platebit on Wear OS): the ongoing workout keeps the heart-rate sensor on; past 45″ and 3 s at or below the target (halfway between resting and Tanaka maximum) the rest ends with a buzz (`REST_SKIP`), still high at the planned end it goes on 15″ at a time (`REST_MORE`), up to 90″ extra.
 - Wear OS: **rep counting (beta)** (`RepCounter`): per-axis high-pass and smoothing of the accelerometer, one count per full swing with hysteresis, the most-moving axis wins; it fills the reps, the user checks them.
