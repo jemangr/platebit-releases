@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.34.0 (79)
+- **Coach persona** (`CoachingProfile.coach`): name (default Arnie / Άρνι), gender (male by default; Gemini Live voice Orus or Kore, retried without a voice when a model refuses; the phone's speech engine picks a voice of that gender when it labels them), manner (strict, balanced, friendly) and check-ins; the persona leads the coach's data in chat and Live, and the titles show the name.
+- **Evening check-in** (`ReminderKind.CHECK_IN`, 2½ h before sleep, never before 19:30): the day's calories, protein and water against the targets and the one thing still to do, worded by the manner; the Sunday review follows the check-in choice.
+- **AI credit alert**: a threshold ($1–$10) checked at most every 3 hours after AI use for DeepSeek and OpenRouter, once a day; every AI warning now says what to do (backup engine, top up, AI Cloud).
+
 ## 1.33.0 (78)
 - **Diet preferences** (`CoachingProfile.diet`, a new setup step): styles (Mediterranean, vegetarian, vegan, pescatarian, keto, Orthodox fasting on Wednesdays and Fridays, intermittent fasting with an eating window), meals a day (3/4/5), allergies and intolerances (never relaxed, in every fallback), dislikes, cooking time, budget, eating out and alcohol a week; all told to the coach.
 - **The meal planner follows them**: foods carry tags (meat, fish, shellfish, milk, lactose, egg, gluten, nuts, peanut, soy, sesame, honey), suggestions carry cooking minutes, cost and keto; 17 new suggestions (plant-based, fasting, keto, gluten-free breakfasts); soft wishes give way before the diet, the diet before nothing, allergies never. Keto suggestions only for keto. Daily whey goes into a snack.
