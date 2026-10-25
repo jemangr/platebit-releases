@@ -2,6 +2,12 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.43.0 (92)
+- **Walking Live** (`walk/`): a health|location foreground service with the step counter, GPS outdoors (haversine between fixes within 25 m accuracy, no jitter under 2 m, no jumps over 15 km/h; steps × stride from height while GPS has no fix or on a treadmill), pace, speed and cadence over the last minute, a voice every km, pause and resume, Japanese interval walking (3′ fast / 3′ easy × 5, buzz and voice at each change). The route isn't kept; the walk is saved as a distance-and-time workout with the steps in its note. A walk button bottom left on Today, opposite the camera, showing the steps while walking.
+- The watch shows a walk (`WatchWalk`: steps, time counted on from the phone's last word, km, pace, cadence, interval phase) with Pause/Resume and Finish (`WALK_*` messages).
+- **The watch app opens by itself** when a workout or a walk starts on the phone (`WatchLaunch`, RemoteActivityHelper with a `platebit://wear` link the watch answers); Settings → Devices → Open on the watch.
+- **Lean mass** from Health Connect scales (`LeanBodyMassRecord`, a new read permission, asked from Settings by people already connected), shown with body fat on the weight card.
+
 ## 1.42.0 (91)
 - **Free food analyses without a key**: an install with no AI set up gets 10 a month through Platebit Pro AI Cloud after an OK on the scan screen (photo through api.platebit.app to DeepSeek, not kept). The app makes a random install key (`pf-` + 32 hex, not in backups); the worker keeps only its SHA-256 (`free_users`), counts use under the negative id, allows scans only, `free_month_scans` / `free_day_requests` / `free_total_month_usd` / `free_day_new` (new installs per connection a day, salted daily hash) in the admin page. Used up → an offer of a Pro AI Cloud place or an own key.
 - **Streaks and milestones** (`Achievements`): days in a row with food logged, weeks in a row with a workout, 20 milestones (logging, training, nutrition, body), on the Progress tab and a new screen.
