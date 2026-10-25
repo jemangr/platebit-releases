@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.26.3 (70)
+- **Restore on the first screen**: after a reinstall or on a new phone, "Restore from a backup" on the welcome page reads the backup file (any folder, Drive, Downloads) and goes straight to Today when it carries a profile; the consent gate then asks once. Android erases the app's folder permission on uninstall, so the file is picked, not found by itself.
+- **Hevy during setup**: choosing Hevy as the way you record workouts shows an import card with the export path; the CSV brings history, records and routines (shared `HevyImport` with the Training screen).
+
 ## 1.26.2 (69)
 - **Save to Google Drive** (Me → Data): the full backup handed to the Drive app's "Upload to Drive", where the user picks the account and folder; shown when the Drive app is installed. Automatic Drive backups (Drive API, drive.file, needs a Google Cloud OAuth client) are planned for later.
 
