@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.27.0 (71)
+- **Logo bar on the tabs**: Today, Plan, Progress and Me share a fixed bar (stays while scrolling): share on the left, the Platebit wordmark centred, then report a problem (beta builds only), notifications and settings. The bell and gear left the page headers; the camera keeps its full screen.
+- **Share from each tab** (`ShareCards`): a day card picture (calorie ring, macros, meals, water, steps, workout), today's meal plan and workout as text, a progress card picture (trend line, goal, 3-month forecast) and an invitation. No medicines or health details on any of them.
+- **Shake to report a problem**: three strong jolts within 1.5 s on any screen ask to send the problem report; on by default, switch in Me → About.
+
 ## 1.26.3 (70)
 - **Restore on the first screen**: after a reinstall or on a new phone, "Restore from a backup" on the welcome page reads the backup file (any folder, Drive, Downloads) and goes straight to Today when it carries a profile; the consent gate then asks once. Android erases the app's folder permission on uninstall, so the file is picked, not found by itself.
 - **Hevy during setup**: choosing Hevy as the way you record workouts shows an import card with the export path; the CSV brings history, records and routines (shared `HevyImport` with the Training screen).
