@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.44.0 (95)
+- **Music on walks and workouts** (`music/Music`): play/pause, next and previous through the media session of the chosen app (with notification access, `MusicListener` only for MediaSessionManager) or Android's media keys to whatever plays; the song's title and artist; Settings → Devices → Music: app, play when a walk or workout starts. A music bar on the walk and workout screens.
+- The watch gets the song (`WatchMusic`) and ⏮ ⏯ ⏭ on the walk and workout screens (`MUSIC_*` messages; icons drawn in the app).
+
 ## 1.43.2 (94)
 - **Routines from Hevy's API** (`HevyApi`, `HevyRoutines`): with the user's Hevy Pro key (pasted in a dialog, used once, never saved) every saved routine comes in with its folder, rep ranges, rest, notes, warm-ups and supersets (`/v1/routine_folders`, `/v1/routines`, 10 a page, `api-key` header); they replace the routines guessed from the CSV history with the same name.
 
