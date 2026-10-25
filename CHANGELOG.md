@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.43.1 (93)
+- Hevy import: US-style dates ("Sep 20, 2026, 4:59 PM", narrow spaces before AM/PM) were not read, so newer exports brought nothing; more date layouts, case-insensitive, and a clear error when no date in a file can be read.
+- Routines from an import come from the fullest of a title's last three sessions.
+- Band exercises with kilos logged stay weight and reps.
+
 ## 1.43.0 (92)
 - **Walking Live** (`walk/`): a health|location foreground service with the step counter, GPS outdoors (haversine between fixes within 25 m accuracy, no jitter under 2 m, no jumps over 15 km/h; steps × stride from height while GPS has no fix or on a treadmill), pace, speed and cadence over the last minute, a voice every km, pause and resume, Japanese interval walking (3′ fast / 3′ easy × 5, buzz and voice at each change). The route isn't kept; the walk is saved as a distance-and-time workout with the steps in its note. A walk button bottom left on Today, opposite the camera, showing the steps while walking.
 - The watch shows a walk (`WatchWalk`: steps, time counted on from the phone's last word, km, pace, cadence, interval phase) with Pause/Resume and Finish (`WALK_*` messages).
