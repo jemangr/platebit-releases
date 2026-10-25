@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.37.0 (85)
+- **Training widget** (`TrainingWidget`, RemoteViews with chronometers): during a workout the next set, elapsed time, rest countdown, ✓ Set (ticks the next set with its pre-filled numbers via `LiveWorkout.tickNext` and starts the rest), Skip, +30″; otherwise today's workout with Start (starts it through `TodayWorkout.start` and opens it), or the rest day and next workout, the week and the streak. Redrawn when the session, rest, log or program change.
+- **Workout notification** shows the next set and has the same buttons.
+- **Workout photos** (`WorkoutLog.photos`, `WorkoutPhotos`, max 6, 1600 px JPEG, never in backups): camera or gallery, on the live workout and its summary; removed ones are deleted once saved, discarded sessions take theirs; erase-all clears them. Share card option "Photo": the clear card over the photo, as JPEG.
+
 ## 1.36.2 (84)
 - Routine links: the `https://platebit.app/r` intent filter has `autoVerify`, so once `/.well-known/assetlinks.json` is on platebit.app they open Platebit directly.
 
