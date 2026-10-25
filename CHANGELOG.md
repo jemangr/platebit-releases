@@ -2,6 +2,12 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.26.2 (69)
+- **Save to Google Drive** (Me → Data): the full backup handed to the Drive app's "Upload to Drive", where the user picks the account and folder; shown when the Drive app is installed. Automatic Drive backups (Drive API, drive.file, needs a Google Cloud OAuth client) are planned for later.
+
+## 1.26.1 (68)
+- **Routines from Hevy**: Hevy's CSV holds the history, not the routines, but every workout carries its routine's name, so importing now also saves one routine per title from its latest session (working sets, reps, warm-ups) next to the history, records and last weights it already brought. Names the user already has are left alone.
+
 ## 1.26.0 (67)
 - **Settings in seven groups**: Me shows your profile and AI at a glance, then Profile and goals, AI, Notifications, Devices, Data, Appearance and About, each on its own page (nothing removed, just grouped).
 - **Bell and gear on the screens**: Today (notifications, profile and goals), Plan (notifications, profile), Progress (notifications, data), Meal plan (meal reminders), Training (notifications, training profile) and Medicines (their notification sounds). A red dot on the bell when Android has the app's notifications off. Connecting Health Connect from Today opens Devices.
