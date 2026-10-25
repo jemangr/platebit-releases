@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.33.0 (78)
+- **Diet preferences** (`CoachingProfile.diet`, a new setup step): styles (Mediterranean, vegetarian, vegan, pescatarian, keto, Orthodox fasting on Wednesdays and Fridays, intermittent fasting with an eating window), meals a day (3/4/5), allergies and intolerances (never relaxed, in every fallback), dislikes, cooking time, budget, eating out and alcohol a week; all told to the coach.
+- **The meal planner follows them**: foods carry tags (meat, fish, shellfish, milk, lactose, egg, gluten, nuts, peanut, soy, sesame, honey), suggestions carry cooking minutes, cost and keto; 17 new suggestions (plant-based, fasting, keto, gluten-free breakfasts); soft wishes give way before the diet, the diet before nothing, allergies never. Keto suggestions only for keto. Daily whey goes into a snack.
+- Meal slots follow meals a day and the eating window.
+
 ## 1.32.0 (77)
 - **Lifestyle** (`CoachingProfile.life`): job (sitting ×1.0, standing ×1.05, manual ×1.12 on the burn, skipped when the smart target measured it), stress and shifts, asked in setup and told to the coach.
 - **Supplements**: casein; creatine's start date (chips) with an optional daily reminder created under Medicines; the last coffee's time, flagged when under 6 h before bed (`SupplementNotes`), for the coach's sleep advice.
