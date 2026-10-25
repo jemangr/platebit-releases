@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.36.1 (83)
+- Quick add keeps the text: switching from Describe to search or manual carries it into the search and the name. A "From the food list, no AI" row reads typed amounts at once ("3 eggs") and opens them on the meal screen.
+- **Your products** (`ProductStore`, by barcode, in the backup): every barcode hit on Open Food Facts is kept (next scan instant and offline); an unknown barcode plus a photo of its label is learned from the AI reading (only for one packaged item: barcode in the photo, or a brand / pack / serving size seen), never overwritten by a lookup. The viewfinder reads barcodes with Open Food Facts off too; saved products show first in search.
+
 ## 1.36.0 (82)
 - **Health Connect reads more**: distance (next to steps), SpO2 (heart sheet), body fat (attached to imported scale weigh-ins), water from other apps (imported once per record id, switchable); all in the coach's activity table. Platebit's own workouts are filtered out of the read.
 - **Write to Health Connect** (opt-in, its own permission request): meals as `NutritionRecord` (energy and macros, meal type), water as `HydrationRecord`, Platebit workouts as `ExerciseSessionRecord`, last 7 days, with stable client record ids (`platebit-meal-12`…), a version bumped only when content changes, deletes mirrored; imported water is never written back. Turning it off offers to delete what was written.
