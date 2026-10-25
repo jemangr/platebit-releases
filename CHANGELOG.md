@@ -2,6 +2,12 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.35.0 (80)
+- **Meal times by kind of day** (`MealDays`): weekdays, weekends (`DaySchedule.weekend`: own wake/sleep, no work unless `worksWeekends`) and training days (`gymDay` times; the meals before and after the workout are marked); one day on its own (`DayPlan.times` / `skip`, planned again with `MealPlanner.refit`, dishes kept). Meal reminders, the plan sync and the coach's data follow each day's times.
+- **Suggested times with Yes / Change times / No** on the meal plan, plus the user's day in their own words turned into times by the coach; new coach action `set_meal_times` (scope today / weekdays / weekends / training days / every day; `skip` for today only), in chat and Live.
+- **2 more options per meal**, same size, one tap (`MealPlanner.options`); **favorites** from locked meals come up about every other day (`MealPrefs.favorites`); **cook once for two days** (`cookFor`, `leftover`, `withLeftovers`, kept consistent on every store write by `linkLeftovers`), per dinner or for every dinner (`MealPrefs.leftovers`).
+- **Offline AI errors** (`NetworkTrouble`): "no internet" instead of hosts and ports; the coach sends the waiting question by itself once the phone is back online (`Online.whenBack`); connect timeout 12 s.
+
 ## 1.34.0 (79)
 - **Coach persona** (`CoachingProfile.coach`): name (default Arnie / Άρνι), gender (male by default; Gemini Live voice Orus or Kore, retried without a voice when a model refuses; the phone's speech engine picks a voice of that gender when it labels them), manner (strict, balanced, friendly) and check-ins; the persona leads the coach's data in chat and Live, and the titles show the name.
 - **Evening check-in** (`ReminderKind.CHECK_IN`, 2½ h before sleep, never before 19:30): the day's calories, protein and water against the targets and the one thing still to do, worded by the manner; the Sunday review follows the check-in choice.
