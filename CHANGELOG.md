@@ -2,6 +2,9 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.43.2 (94)
+- **Routines from Hevy's API** (`HevyApi`, `HevyRoutines`): with the user's Hevy Pro key (pasted in a dialog, used once, never saved) every saved routine comes in with its folder, rep ranges, rest, notes, warm-ups and supersets (`/v1/routine_folders`, `/v1/routines`, 10 a page, `api-key` header); they replace the routines guessed from the CSV history with the same name.
+
 ## 1.43.1 (93)
 - Hevy import: US-style dates ("Sep 20, 2026, 4:59 PM", narrow spaces before AM/PM) were not read, so newer exports brought nothing; more date layouts, case-insensitive, and a clear error when no date in a file can be read.
 - Routines from an import come from the fullest of a title's last three sessions.
