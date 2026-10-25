@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.36.0 (82)
+- **Health Connect reads more**: distance (next to steps), SpO2 (heart sheet), body fat (attached to imported scale weigh-ins), water from other apps (imported once per record id, switchable); all in the coach's activity table. Platebit's own workouts are filtered out of the read.
+- **Write to Health Connect** (opt-in, its own permission request): meals as `NutritionRecord` (energy and macros, meal type), water as `HydrationRecord`, Platebit workouts as `ExerciseSessionRecord`, last 7 days, with stable client record ids (`platebit-meal-12`…), a version bumped only when content changes, deletes mirrored; imported water is never written back. Turning it off offers to delete what was written.
+- Privacy text, connection guide and legal terms say what is written.
+
 ## 1.35.1 (81)
 - **Built-in food list** (`FoodList`, ~90 common Greek foods with per-100 g values and piece/slice/portion weights) and a phrase reader for Greek and English ("3 βραστά αυγά", "2 φέτες ψωμί και 200γρ κοτόπουλο", "καφές με γάλα"): amounts, units, sides, meal names.
 - Used without internet: the coach answers an offline food message with a Log card from the list (source "Platebit food list"), Describe in Quick add falls back to it, and search shows list foods first, then Open Food Facts. Quick add is offered to everyone.
