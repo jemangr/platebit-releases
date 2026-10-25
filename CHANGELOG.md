@@ -2,6 +2,9 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.36.2 (84)
+- Routine links: the `https://platebit.app/r` intent filter has `autoVerify`, so once `/.well-known/assetlinks.json` is on platebit.app they open Platebit directly.
+
 ## 1.36.1 (83)
 - Quick add keeps the text: switching from Describe to search or manual carries it into the search and the name. A "From the food list, no AI" row reads typed amounts at once ("3 eggs") and opens them on the meal screen.
 - **Your products** (`ProductStore`, by barcode, in the backup): every barcode hit on Open Food Facts is kept (next scan instant and offline); an unknown barcode plus a photo of its label is learned from the AI reading (only for one packaged item: barcode in the photo, or a brand / pack / serving size seen), never overwritten by a lookup. The viewfinder reads barcodes with Open Food Facts off too; saved products show first in search.
