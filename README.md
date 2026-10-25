@@ -23,9 +23,12 @@
   <img src="docs/screenshots/16-activity.png" width="24%" alt="Steps, the day's workouts, sleep stages and heart rate">
   <img src="docs/screenshots/19-readiness-steps.png" width="24%" alt="Readiness before a workout and the last 14 days of steps">
   <img src="docs/screenshots/12-exercise-history.png" width="24%" alt="Exercise history with records and estimated 1RM">
-  <img src="docs/screenshots/2-meal-plan.png" width="24%" alt="Meal plan built from calories and protein">
+  <img src="docs/screenshots/20-plan-tab.png" width="24%" alt="Plan tab: today's meals and workout, the meal plan, shopping list and program">
 </p>
 <p align="center">
+  <img src="docs/screenshots/21-progress-tab.png" width="24%" alt="Progress tab: weight trend, the training week and recent workouts">
+  <img src="docs/screenshots/22-now.png" width="24%" alt="The Now card: the one next thing to do, with one button">
+  <img src="docs/screenshots/2-meal-plan.png" width="24%" alt="Meal plan built from calories and protein">
   <img src="docs/screenshots/4-history.png" width="24%" alt="History with goals per day, week and month">
 </p>
 <p align="center">
@@ -49,6 +52,7 @@
 
 Το Platebit είναι ένας **AI Coach στο κινητό** που μαζεύει σε ένα μέρος τη διατροφή, την προπόνηση, τη δραστηριότητα, τον ύπνο και τα φάρμακά σου, και σε βοηθάει να τα κάνεις πράξη. Μιλάει ελληνικά, ξέρει τα δικά σου δεδομένα και προτείνει αλλαγές που τις εγκρίνεις με ένα πάτημα.
 
+- **Πέντε καρτέλες:** Σήμερα, Πλάνο, Coach στη μέση, Πρόοδος, Εγώ. Η κάρτα «Τώρα» δείχνει το επόμενο βήμα της μέρας με ένα κουμπί, και η αρχική προσαρμόζεται στο πώς προπονείσαι (βάρη, τρέξιμο ή περπάτημα).
 - **Coach:** chat και ζωντανή φωνή (και Gemini Live). Απαντάει από τα δικά σου νούμερα και ετοιμάζει αλλαγές ως κάρτες που δέχεσαι ή απορρίπτεις.
 - **Διατροφή:** φωτογραφίζεις το πιάτο ή γράφεις «6 βραστά αυγά» και βλέπεις θερμίδες και μακροθρεπτικά. Έχει πλάνο γευμάτων από τους στόχους σου και λίστα αγορών ανά διάδρομο.
 - **Προπόνηση:** πρόγραμμα από τις απαντήσεις σου ή δικές σου ρουτίνες με supersets και προθερμάνσεις. Βιβλιοθήκη 870+ ασκήσεων με φωτογραφίες, καταγραφή σετ με τα κιλά της προηγούμενης φοράς, χρονόμετρο ξεκούρασης και με κλειστή οθόνη, ρεκόρ και στατιστικά μετά από κάθε προπόνηση. Κοινοποίηση σε φίλους και εισαγωγή/εξαγωγή στη μορφή του Hevy.
@@ -62,6 +66,10 @@
 ## What it does
 
 Platebit is built around one coach that sees the whole picture: the meals you log, the sets you lift, how much you walked and slept, your weight and measurements, and your medicines if you let it. Everything below feeds it, and everything it suggests comes back as a change you accept or decline.
+
+**Five tabs, one next step**
+- 🧭 **Today, Plan, Coach, Progress, Me.** The AI Coach sits in the middle of the bar (tap to talk, hold for the chat). Today leads with a **Now** card: the one next thing to do, with one button: log the meal that's due (or eat it as planned), take the morning medicines, start today's workout, weigh in, drink water.
+- 🏋️ **A home screen for how you train.** Lifters see today's workout and the week's volume against last week; runners, swimmers and team sports see the week's active minutes; walkers see steps first. Medicines move up when you take some, weight when you weigh in most days.
 
 **The coach**
 - 🔁 **The coach changes things for you.** Ask it and it prepares the change as a card: a meal's grams, macros, step goal, a measurement, your day's times, reminders, a planned meal, or your program (sets, reps, rest, adding or swapping an exercise, which days each workout is on, next time's weight). Medicines, settings and keys stay yours.

@@ -2,6 +2,14 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.23.0 (63)
+- **Five tabs**: Today, Plan, AI Coach (middle), Progress, Me. Plan gathers today's meals and workout with the meal plan, shopping list, program and exercise library; Progress the weight trend, the training week, recent workouts, history, measurements and reports; Me is Settings with the new logo.
+- **The Now card** on Today: the one next thing with one button, most urgent first: a workout in progress, medicines due, a meal that's due and not logged (with "Ate it as planned" when there's a plan, or "Didn't eat"), today's workout around the gym time, the morning weigh-in, water when 400 ml or more behind; otherwise "All done for now" and the next meal.
+- **The home screen follows how you train**: lifting (weights, CrossFit) puts a training card with today's workout and the week's volume against the same days last week right after calories; endurance (running, cycling, swimming, sports, classes) puts activity first and shows active minutes; walking puts steps first. Medicines move up when you take any, weight when you weigh in 5+ days in 2 weeks, water goes last if you never log it.
+- **Disclaimer and health-data consent** (GDPR art. 9): a step in setup and a one-time screen for existing users, with the full text in Me → Legal.
+- **New logo**: four scanner corners on the icon, the wordmark on the welcome screen, Me and workout share cards.
+- **Sharing a workout is free** (always with the logo); during the free beta every Pro feature is on.
+
 ## 1.22.2 (62)
 - **Meal scans never think**: DeepSeek scans send thinking disabled, Gemini scans ask for no thinking (2.x) or "minimal" (newer), falling back to "low" and then the default if a model refuses. The DeepSeek thinking setting now applies to the AI Coach only.
 
