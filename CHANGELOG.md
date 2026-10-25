@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.35.1 (81)
+- **Built-in food list** (`FoodList`, ~90 common Greek foods with per-100 g values and piece/slice/portion weights) and a phrase reader for Greek and English ("3 βραστά αυγά", "2 φέτες ψωμί και 200γρ κοτόπουλο", "καφές με γάλα"): amounts, units, sides, meal names.
+- Used without internet: the coach answers an offline food message with a Log card from the list (source "Platebit food list"), Describe in Quick add falls back to it, and search shows list foods first, then Open Food Facts. Quick add is offered to everyone.
+
 ## 1.35.0 (80)
 - **Meal times by kind of day** (`MealDays`): weekdays, weekends (`DaySchedule.weekend`: own wake/sleep, no work unless `worksWeekends`) and training days (`gymDay` times; the meals before and after the workout are marked); one day on its own (`DayPlan.times` / `skip`, planned again with `MealPlanner.refit`, dishes kept). Meal reminders, the plan sync and the coach's data follow each day's times.
 - **Suggested times with Yes / Change times / No** on the meal plan, plus the user's day in their own words turned into times by the coach; new coach action `set_meal_times` (scope today / weekdays / weekends / training days / every day; `skip` for today only), in chat and Live.
