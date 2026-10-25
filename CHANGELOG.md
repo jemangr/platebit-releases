@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.26.0 (67)
+- **Settings in seven groups**: Me shows your profile and AI at a glance, then Profile and goals, AI, Notifications, Devices, Data, Appearance and About, each on its own page (nothing removed, just grouped).
+- **Bell and gear on the screens**: Today (notifications, profile and goals), Plan (notifications, profile), Progress (notifications, data), Meal plan (meal reminders), Training (notifications, training profile) and Medicines (their notification sounds). A red dot on the bell when Android has the app's notifications off. Connecting Health Connect from Today opens Devices.
+
 ## 1.25.0 (66)
 - **Routine library** (Training → Routines): save any number of routines outside the program, put any of them on any weekday with the day chips, start one or an empty workout. The week plan, the Today card, the home training card, the training reminder and the coach all see them; switching program keeps the routines' days. Names stay unique.
 - **Save as a routine** on a finished workout's stats screen: its exercises, working sets, reps, rest, warm-ups and supersets.
