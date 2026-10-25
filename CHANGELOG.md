@@ -2,6 +2,12 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.29.1 (74)
+- **Live animation**: an aurora orb (three shifting colour blobs, a bright heart), a ring of 72 sound bars that follows the user's voice while listening and the coach's own voice (RMS of the played audio) while speaking, orbiting specks, and two comets while thinking; still frames for screenshots (`frozenAt`).
+- **The coach's exercise changes reach the workout in progress**: replace, add and remove apply to the running session of that workout too (never to exercises with done sets).
+- Meal types follow the language in use (they were fixed at first load); long meal names wrap to two lines.
+- New screenshots: 36-scan-result and 37-live-coach (for the site's demo), 35-live-orb.
+
 ## 1.29.0 (73)
 - **Hevy parity, phase 2 (progress)**: per-exercise charts with a metric (estimated 1RM, heaviest weight, best set volume, session volume, total reps/seconds) and a range (1 month, 3 months, 1 year, all); set records (heaviest weight per rep count, only real records); a 1RM calculator with a 100–50% table and Epley reps; a training calendar with tappable days and a weeks-in-a-row streak; sets per muscle group over 7/30/91 days against the period before. Both are linked from Progress → More.
 - The meal plan header keeps its title on one line (the week arrows sit next to the week).
