@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.24.1 (65)
+- **Report a problem** (Me → Help): the app version, phone, the last crashes (kept on the phone) and the app's own recent warnings and errors as a text file to share; no meals, weights, health data, medicines, keys or chat, and key-like strings are masked.
+- **End-to-end tests on an emulator** in CI on every push: setup with the consent, every tab and the meal plan, with screenshots, logcat and crashes kept with the run.
+
 ## 1.24.0 (64)
 - **Meals you always have**: "Always this" on a planned meal keeps it in its slot on the chosen weekdays (coffee every morning, a koulouri on school days, yogurt with honey at night). Every new plan keeps it and the other meals share what's left of the day's calories and protein, each between half and twice its usual size.
 - **Meals you don't have**: "Meals of the day" (the sliders icon) turns a slot off for all or some weekdays, e.g. no afternoon snack; its share goes to the others.
