@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.38.0 (86)
+- **Wear OS app** (new `:wear` module, same package `app.morsel` and key; Compose for Wear OS): the phone's workout in progress with the next set, − / + for weight and reps, ✓, rest countdown with Skip and +30″ and a buzz at the end (an ongoing activity keeps it going with the screen off), live heart rate from the watch, Start for today's workout, Finish with two taps, a notification when a workout starts on the phone.
+- Phone ↔ watch over the Data Layer (`WatchProtocol`): the state as one urgent data item, sent only when a watch declares the `platebit_wear` capability; buttons as messages to `WearActionsService`, which ticks the set with the watch's numbers (`LiveWorkout.withNumbers`). With a watch paired the phone's rest-over alert stays on the phone.
+- CI: the watch APK goes to its own `watch-v<code>` release (never "latest"); the updater picks the phone APK by name. e2e counts only Platebit's own crashes (the emulator's Gmail crashed the last runs).
+
 ## 1.37.0 (85)
 - **Training widget** (`TrainingWidget`, RemoteViews with chronometers): during a workout the next set, elapsed time, rest countdown, ✓ Set (ticks the next set with its pre-filled numbers via `LiveWorkout.tickNext` and starts the rest), Skip, +30″; otherwise today's workout with Start (starts it through `TodayWorkout.start` and opens it), or the rest day and next workout, the week and the streak. Redrawn when the session, rest, log or program change.
 - **Workout notification** shows the next set and has the same buttons.
