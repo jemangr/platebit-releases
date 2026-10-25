@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.45.0 (97)
+- **Progress photos** (`BodyPhotos`, `BodyPhotosScreen`): front, side and back by date in the app's own folder (never in backups, erased with everything), the first and the latest side by side, any two by tapping, with the days apart and the trend weight on each date.
+- **Fibre, sugars and sodium** (database 3 → 4, `food_items.fiberPer100`, `sugarPer100`, `sodiumMgPer100`): from the AI (new fields in the scan answer), Open Food Facts (`fiber_100g`, `sugars_100g`, `sodium_100g` or salt ÷ 2.5) and saved products; today's totals on the calories card with a fibre goal (14 g per 1,000 kcal, at least 25) and the WHO sodium limit, and in the coach's data.
+
 ## 1.44.1 (96)
 - Workout summary for distance-and-time workouts (`WorkoutLog.cardio`): time, km, pace and steps (`WorkoutLog.steps`, saved by Walking Live), no sets, volume, muscles or "save as a routine"; the share card and caption match.
 - Discard on a workout that was just finished (with the same question as Delete).
