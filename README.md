@@ -20,6 +20,12 @@
   <img src="docs/screenshots/13-exercise-picker.png" width="24%" alt="Exercise library with photos, search and filters">
 </p>
 <p align="center">
+  <img src="docs/screenshots/40-watch-workout-round.png" width="26%" alt="Wear OS: the next set with weight, reps and a big tick">
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/41-watch-food-tile-round.png" width="26%" alt="Wear OS tile: today's calories ring with protein, carbs and fat">
+</p>
+<p align="center"><sub>On your wrist: the workout and today's food, on Wear OS.</sub></p>
+<p align="center">
   <img src="docs/screenshots/16-activity.png" width="24%" alt="Steps, the day's workouts, sleep stages and heart rate">
   <img src="docs/screenshots/19-readiness-steps.png" width="24%" alt="Readiness before a workout and the last 14 days of steps">
   <img src="docs/screenshots/12-exercise-history.png" width="24%" alt="Exercise history with records and estimated 1RM">
@@ -61,9 +67,17 @@
 - **Δραστηριότητα και αποκατάσταση:** βήματα με στόχο από το ίδιο το κινητό ή από το Health Connect, ύπνος με στάδια, παλμοί και HRV, και ετοιμότητα πριν την προπόνηση (ανέβασε, κράτα ή χαλαρά). Επίσης μετρήσεις σώματος, ζυγαριά και τάση βάρους.
 - **Υγεία και ρουτίνα:** υπενθυμίσεις για φάρμακα με μηνιαίο ημερολόγιο, και υπενθυμίσεις για γεύματα, νερό, προπόνηση και ζύγισμα, η καθεμία με δικό της ήχο. Εβδομαδιαία ανασκόπηση κάθε Κυριακή και widget στην αρχική οθόνη.
 - **Ιστορικό και αναφορές:** κάθε μέρα, εβδομάδα και μήνας με τους στόχους σου, αναφορές PDF για διαιτολόγο, προπονητή ή γιατρό, και αυτόματο αντίγραφο ασφαλείας.
+- **Ρολόι Wear OS:** η προπόνηση στον καρπό (επόμενο σετ, κιλά και επαναλήψεις, ✓, ξεκούραση με δόνηση, παλμοί), ξεκούραση με βάση τους παλμούς, μέτρημα επαναλήψεων (beta), και tile με τις θερμίδες και τα μακροθρεπτικά της μέρας.
+- **Platebit Pro AI Cloud (δωρεάν στο beta):** AI χωρίς λογαριασμό και χωρίς key, με 150 αναλύσεις φαγητού και 300 μηνύματα στον coach τον μήνα. Οι πρώτοι testers το ενεργοποιούν μέσα από την εφαρμογή με το όνομά τους.
+- **Backup στο Google Drive** κάθε εβδομάδα, και επαναφορά στο νέο κινητό με ένα πάτημα.
 - **Χωρίς λογαριασμό και χωρίς διαφημίσεις:** τα δεδομένα μένουν στο κινητό σου. Επιλέγεις εσύ ποιο AI χρησιμοποιείς.
 
-**Εγκατάσταση:** κατέβασε το [Platebit.apk](https://github.com/jemangr/platebit-releases/releases/latest/download/Platebit.apk) στο κινητό, άνοιξέ το και επίτρεψε την «Εγκατάσταση άγνωστων εφαρμογών» αν το ζητήσει. Οι ενημερώσεις έρχονται μέσα από την εφαρμογή. Χρειάζεται Android 12 ή νεότερο. Τι αλλάζει σε κάθε έκδοση: [CHANGELOG.md](CHANGELOG.md) και [Releases](https://github.com/jemangr/platebit-releases/releases).
+**Εγκατάσταση σε 3 βήματα:**
+1. Κατέβασε το [Platebit.apk](https://github.com/jemangr/platebit-releases/releases/latest/download/Platebit.apk) στο κινητό (Android 12 ή νεότερο).
+2. Άνοιξέ το και επίτρεψε την «Εγκατάσταση άγνωστων εφαρμογών» αν το ζητήσει.
+3. Απάντησε στις ερωτήσεις (περίπου ένα λεπτό) και ενεργοποίησε το AI: Ρυθμίσεις → AI engine → Οδηγός βήμα βήμα.
+
+Οι ενημερώσεις έρχονται μέσα από την εφαρμογή. Θες να ελέγξεις το αρχείο; Το SHA-256 κάθε έκδοσης φαίνεται δίπλα στο αρχείο στη σελίδα [Releases](https://github.com/jemangr/platebit-releases/releases). Τι αλλάζει σε κάθε έκδοση: [CHANGELOG.md](CHANGELOG.md).
 
 ## What it does
 
@@ -77,6 +91,7 @@ Platebit is built around one coach that sees the whole picture: the meals you lo
 - 🔁 **The coach changes things for you.** Ask it and it prepares the change as a card: a meal's grams, macros, step goal, a measurement, your day's times, reminders, a planned meal, or your program (sets, reps, rest, adding or swapping an exercise, which days each workout is on, next time's weight). Medicines, settings and keys stay yours.
 - 🤖 **AI Coach.** Tap the button in the middle of the screen to talk live, or hold it for the chat. It knows your meals, water, weigh-ins, body composition and measurements, steps, sleep and heart rate, your program and every set of the last two weeks, your meal plan, and the medicines you chose to share; it answers from your own numbers and prepares changes as cards you accept or decline. It only talks about food, training, sleep, your data and the app.
 - 🎙️ **Gemini Live (optional).** With a Gemini key, Live can use Gemini's own voice: it answers as you talk and you can interrupt it mid-sentence; what was said is added to the chat.
+- ☁️ **Platebit Pro AI Cloud (free in the beta).** No account and no key: food analyses and the coach work right away, 150 analyses and 300 coach messages a month. The first testers turn it on inside the app with just their name; requests pass through our server to DeepSeek, and we keep only the name and usage counters.
 - 📊 **Weekly review.** Sunday at 20:00: the week's calories against target, days on target, protein, water, trend weight, workouts and medicines, plus one concrete thing to try next week.
 
 **Nutrition**
@@ -94,10 +109,15 @@ Platebit is built around one coach that sees the whole picture: the meals you lo
 - 🏋️ **Training program.** A suggested program from your days, level, gym or home and goal (sets, reps, rest and when to add weight), or type your own one exercise per line.
 - 🗂️ **Routines and records.** Build your own program like a gym app: exercises in order, sets, reps, rest and warm-ups for each, supersets by linking an exercise to the next, or start from the suggested one. Every exercise has its history: heaviest weight, best estimated 1RM and best session volume, a chart of your estimated 1RM over time, and every session.
 - 📚 **Exercise library.** 870+ exercises with photos, muscles, equipment and instructions; search, filter by muscle and equipment, or create your own. Pick several at once for a routine, or add and replace exercises mid-workout.
-- 📝 **Log your workouts.** Start a workout and every set is filled in with last time's weight and reps; tick a set to start the rest timer, which keeps running in the notification with the screen off and vibrates when the rest is over. Warm-ups, drop sets, sets to failure and RPE; supersets go straight to the next exercise and rest after the round. When every set reached the top of the range it says how much to add (2.5 kg upper body, 5 kg lower), and a set that beats your best is marked PR. Saved as you go, so leaving the app mid-workout loses nothing. At the end: a summary with the records you beat, and a picture to share (Pro). Already on Hevy? Import its CSV export, set types included. The AI Coach sees the last two weeks of what you lifted.
+- 📝 **Log your workouts.** Start a workout and every set is filled in with last time's weight and reps; tick a set to start the rest timer, which keeps running in the notification with the screen off and vibrates when the rest is over. Warm-ups, drop sets, sets to failure and RPE; supersets go straight to the next exercise and rest after the round. When every set reached the top of the range it says how much to add (2.5 kg upper body, 5 kg lower), and a set that beats your best is marked PR. Saved as you go, so leaving the app mid-workout loses nothing. At the end: a summary with the records you beat, and a picture to share (Pro). Already on Hevy or Strong? Import its CSV export, set types included. Log each exercise as weight and reps, reps only, assisted, weighted bodyweight, time, or distance and time for cardio (pace and distance records). The AI Coach sees the last two weeks of what you lifted.
 - 📅 **A workout for each day.** Put each workout on its days; the Today card and the training reminders follow the week plan.
 - 🔋 **Readiness before you train.** Push, hold or go easy, from sleep, resting heart rate, HRV and yesterday's food; one tap makes the sets lighter on a bad day.
 - 📈 **Stats after every workout.** Time, sets, reps and volume against last time, records, muscles worked, each exercise and your week; share it as a picture with the app's link, or export every workout as CSV in Hevy's columns.
+
+**On your wrist (Wear OS)**
+- ⌚ **The workout on your watch.** The next set, − / + for weight and reps, a big ✓, the rest counting down with a buzz at the end (screen off too), live heart rate, Start and Finish.
+- ❤️ **Rest by heart rate (optional)** and **rep counting from your wrist (beta)**, which you check before ticking the set.
+- 🍽️ **Food today, at a glance:** a tile with a calories ring and protein, carbs and fat, and watch-face complications.
 
 **Activity, sleep and body**
 - 👟 **Steps, sleep and heart rate.** Steps from the phone's own counter, no other app needed, or from Health Connect (Pacer, Samsung Health or a watch), which also brings sleep, heart rate and HRV: steps against a daily goal you can change, the day's workouts, sleep with its stages and the last 7 nights, heart rate lowest to highest with the last reading.
@@ -113,23 +133,25 @@ Platebit is built around one coach that sees the whole picture: the meals you lo
 - 📊 **One clean diary.** Calories, macros, water, activity and a weight trend you can swipe through day by day; add food or a weigh-in to any past day.
 - 🗓️ **History.** Days, weeks and months: calories against your target, macros, water, steps, sleep, workouts and trend weight, with green or orange marks for each goal (protein, water, steps).
 - 📄 **Reports and export.** A week or month as a PDF for your dietitian, trainer or doctor, daily totals as CSV for Excel, and a full backup that is always free.
-- 💾 **Automatic backup.** Every week to a folder you pick (a synced Google Drive or Nextcloud folder keeps it off the phone too), keeping the last 8. Backups hold meals, water, weight, profile, settings, medicines, workouts, meal plans and your program; never API keys or photos.
+- 💾 **Automatic backup.** Every week, on Wi-Fi, to your **Google Drive** (a "Platebit backups" folder; Platebit sees only its own files), or to a folder you pick, keeping the last 8. On a new phone, **Restore from Google Drive** on the first screen brings everything back. Backups hold meals, water, weight, profile, settings, medicines, workouts, meal plans and your program; never API keys or photos.
 
 **Your devices and your AI**
-- ⌚ **Health Connect.** Steps, workouts, sleep and heart rate from your watch or ring, and weigh-ins from scales such as Withings or Samsung. Platebit only reads, and its "How to connect correctly" guide shows which app writes what, so food and workouts are never counted twice; the same workout from two apps counts once.
-- 🔑 **Bring your own AI.** DeepSeek, Gemini, OpenAI, Claude, OpenRouter or any OpenAI-compatible service. The step-by-step setup connects OpenRouter with one tap and walks you through a key for the others. You pay the provider directly, or use its free quota; Platebit has no servers.
+- ⌚ **Health Connect.** Steps, workouts, sleep and heart rate from your watch or ring, and weigh-ins from scales such as Withings or Samsung. Platebit reads, and writes your meals, water and workouts there only if you turn that on; its "How to connect correctly" guide shows which app writes what, so food and workouts are never counted twice; the same workout from two apps counts once.
+- 🔑 **Bring your own AI.** DeepSeek, Gemini, OpenAI, Claude, OpenRouter or any OpenAI-compatible service. The step-by-step setup connects OpenRouter with one tap and walks you through a key for the others. You pay the provider directly, or use its free quota. With your own key nothing goes through us; without one, there's Platebit Pro AI Cloud.
 - 📈 **AI use and limits.** Requests and tokens per day, week and month, with your own limits, warnings at 80% and 100% and an optional stop.
 - 🇬🇷 **Greek and English.** Pick the language in Settings → Appearance → Language (or in Android's app language settings).
-- 🔒 **Private by design.** No account, no ads, no tracking. Your data stays on your phone; photos and questions go only to the AI you pick, never through us.
+- 🔒 **Private by design.** No account, no ads, no tracking. Your data stays on your phone; photos and questions go only to the AI you pick (through our server only if you use Platebit Pro AI Cloud).
 
 ## Install
 
 1. [Download the APK](https://github.com/jemangr/platebit-releases/releases/latest/download/Platebit.apk) on your phone and open it. Allow "Install unknown apps" if Android asks.
-2. Answer the setup questions (about 2 minutes).
-3. Open **Settings → AI engine → Step-by-step setup** and connect an AI.
+2. Answer the setup questions (about a minute; the rest can wait).
+3. Open **Settings → AI engine → Step-by-step setup**: take a free Platebit Pro AI Cloud place while there are some, or connect your own AI.
 4. Tap the camera and scan a meal.
 
-Updates arrive inside the app (**Settings → Updates**). Needs Android 12 or newer. Calorie, body and training figures are estimates, not medical advice. See [CHANGELOG.md](CHANGELOG.md) for what changed in each version.
+Updates arrive inside the app (**Settings → Updates**). Needs Android 12 or newer. To check the file, compare its SHA-256 with the one shown next to it on the [release page](https://github.com/jemangr/platebit-releases/releases/latest). Prefer an app store–like updater? [Obtainium](https://github.com/ImranR98/Obtainium) works with this page: add `https://github.com/jemangr/platebit-releases` and set the APK filter to `^Platebit\.apk$`.
+
+**The watch app** (Wear OS 3 or newer, with the phone app nearby): download `Platebit-Wear-<version>.apk` from the latest "Platebit Wear OS" release on the [releases page](https://github.com/jemangr/platebit-releases/releases), turn on Developer options and Wireless debugging on the watch, and install it from a computer with `adb pair`, `adb connect` and `adb install -r`. Calorie, body and training figures are estimates, not medical advice. See [CHANGELOG.md](CHANGELOG.md) for what changed in each version.
 
 ## Optional: Open Food Facts
 

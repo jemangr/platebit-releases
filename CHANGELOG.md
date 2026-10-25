@@ -2,6 +2,14 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.41.0 (90)
+- **How each exercise is logged** (`TrackKind`: weight and reps, reps only, assisted, weighted bodyweight, time, distance and time), guessed from the name (whole-word cardio match, library category) and kept per exercise (`WorkoutStore.kinds`, in backups as `exerciseKinds`). Cardio sets keep `LoggedSet.km` with the seconds in `reps`; pace and km/h shown; records for longest distance, longest time and best pace; volume, 1RM and weight records only for lifted kinds; Hevy import/export carries distance.
+- One tap applies the suggested next weight to the sets left.
+- **Strength level** (`StrengthLevels`) for squat, bench, deadlift and overhead press from the estimated 1RM against body weight and sex, with the kilos for the next level.
+- **Strong CSV import** (`StrongCsv`: old and new layouts, `,` or `;`, lbs, metres and miles, warm-up/drop/failure sets, durations).
+- Weight card: body fat from Health Connect scales too, and how long since the last weigh-in; recent weigh-ins with body fat move the card up (`HomeUsage.scale`).
+- Setup ends with "Scan your first meal", opening the camera (or "Later, go to Today").
+
 ## 1.40.1 (89)
 - Platebit Pro AI Cloud shows no money: the balance card becomes "Left this month" with food analyses and coach messages left (`ApiBalance.allowances`, no amounts, so no low-credit alert either).
 
