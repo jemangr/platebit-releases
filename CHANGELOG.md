@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.44.1 (96)
+- Workout summary for distance-and-time workouts (`WorkoutLog.cardio`): time, km, pace and steps (`WorkoutLog.steps`, saved by Walking Live), no sets, volume, muscles or "save as a routine"; the share card and caption match.
+- Discard on a workout that was just finished (with the same question as Delete).
+
 ## 1.44.0 (95)
 - **Music on walks and workouts** (`music/Music`): play/pause, next and previous through the media session of the chosen app (with notification access, `MusicListener` only for MediaSessionManager) or Android's media keys to whatever plays; the song's title and artist; Settings → Devices → Music: app, play when a walk or workout starts. A music bar on the walk and workout screens.
 - The watch gets the song (`WatchMusic`) and ⏮ ⏯ ⏭ on the walk and workout screens (`MUSIC_*` messages; icons drawn in the app).
