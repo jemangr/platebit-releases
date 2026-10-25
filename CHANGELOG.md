@@ -2,6 +2,9 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.40.1 (89)
+- Platebit Pro AI Cloud shows no money: the balance card becomes "Left this month" with food analyses and coach messages left (`ApiBalance.allowances`, no amounts, so no low-credit alert either).
+
 ## 1.40.0 (88)
 - **Platebit Pro AI Cloud** (`cloud/`, Cloudflare Worker on api.platebit.app, D1): the app's OpenAI-format requests go through to DeepSeek (`deepseek-flash`, thinking capped, max 4096 out); a tester's code (`pb-…`, only its SHA-256 stored) is the key; per tester 150 food analyses (a photo, or `X-Platebit-Kind: scan`) and 300 coach messages a month, 60 requests a day and $1.50 a month as caps, a monthly total, an off switch; usage counters only, no bodies or headers logged. Admin page at `/admin` (ADMIN_TOKEN): testers, codes, use, limits, prices. Deployed by `.github/workflows/cloud.yml` (node tests, then `wrangler deploy`).
 - App: new engine `Provider.CLOUD` (before Custom): model picked by the server, Cloud refusals in the user's language, what's left this month as the balance (`/v1/me`). Setup offers the free beta places (`/v1/signup`): a name and one tap make the code, save it and make it the engine; one sign-up per connection a day, places set in the admin page.
