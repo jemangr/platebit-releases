@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.39.0 (87)
+- Wear OS: **rest by heart rate** (opt-in, Devices → Platebit on Wear OS): the ongoing workout keeps the heart-rate sensor on; past 45″ and 3 s at or below the target (halfway between resting and Tanaka maximum) the rest ends with a buzz (`REST_SKIP`), still high at the planned end it goes on 15″ at a time (`REST_MORE`), up to 90″ extra.
+- Wear OS: **rep counting (beta)** (`RepCounter`): per-axis high-pass and smoothing of the accelerometer, one count per full swing with hysteresis, the most-moving axis wins; it fills the reps, the user checks them.
+- The watch's settings live on the phone (`WearSettings`) and travel with the state.
+
 ## 1.38.0 (86)
 - **Wear OS app** (new `:wear` module, same package `app.morsel` and key; Compose for Wear OS): the phone's workout in progress with the next set, − / + for weight and reps, ✓, rest countdown with Skip and +30″ and a buzz at the end (an ongoing activity keeps it going with the screen off), live heart rate from the watch, Start for today's workout, Finish with two taps, a notification when a workout starts on the phone.
 - Phone ↔ watch over the Data Layer (`WatchProtocol`): the state as one urgent data item, sent only when a watch declares the `platebit_wear` capability; buttons as messages to `WearActionsService`, which ticks the set with the watch's numbers (`LiveWorkout.withNumbers`). With a watch paired the phone's rest-over alert stays on the phone.
