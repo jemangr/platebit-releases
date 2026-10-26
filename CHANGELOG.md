@@ -2,6 +2,16 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.60.0 (114)
+- Health notes for the AI Coach: a switch in the health step (`HealthNotes.coachSees`, off by default) and a one-time question for existing profiles with notes (`HealthNotesAsk`). GLP-1 goes to the coach through GLP-1 mode's own switch. Coach texts list what the coach sees.
+- Profile editing in sections (`ProfileSections`): each section opens and saves on its own, with a prompt for unsaved changes.
+- Meals as a home card (`HomeCard.MEALS`), after Calories by default.
+- History, records and next weights by equipment (`WorkoutLogs.equipment`, `sameLift`, `liftKey`); a name without equipment matches either.
+- Quick add: one button (search, then the AI, then calories by hand); found values can be changed. Meal items: edit values, refill with AI after replacing the food (`ItemValuesDialog`, `ResultViewModel.refill`).
+- Barcode amounts: package size from Open Food Facts' printed quantity (`packageSize`), single-serve packages start at the whole package (`Portions.firstAmount`), and the size can be given when unknown (kept with the product).
+- Banter with strong language: clearer instructions to the coach.
+- Fixes and text updates.
+
 ## 1.59.0 (113)
 - **Phone voice choice** (`PhoneVoice`, `PhoneVoiceDialog`, `CoachSpeaker.voices`/`tryVoice`): a "Voice" button in the phone-voice Live lists the phone's voices for the language, plays a sample, saves the pick per language, links to the phone's speech settings and offers Gemini. The coach persona prompt says the voice isn't the coach's to change and where it's changed. The gender guess also falls back to the default voice of the language.
 - **Voice language list** (`VoiceLanguageDialog`) instead of cycling on each tap.
