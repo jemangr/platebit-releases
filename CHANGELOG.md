@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.52.0 (105)
+- **Italian and Spanish** (`AppLanguage.ITALIAN`, `SPANISH`): catalogs in `assets/i18n/it.json` and `es.json` (every text the Greek covers, same placeholders; `OtherLanguagesTest`), loaded when the language is chosen or the phone speaks it. Dates, numbers (decimal comma), the coach's reply language and the spoken cues follow it; widgets and the Android per-app language list too (`values-it`, `values-es`, `locales_config`). Gym exercise names stay in English.
+- "Suggest a better translation" in Settings for Italian and Spanish (`TranslationFixDialog`): where, what it says, what it should say, shared from the phone.
+- `PLATEBIT_SHOT_LANGS=it,es` draws the screenshot tests in those languages too, under `app/build/i18n-shots`.
+
 ## 1.51.0 (104)
 - **Long-term charts** (`LongTerm`, `ChartsScreen`, `BarChart`): one span for all (1 month, 3, 6, a year, all), bars by day up to ~3 months, by week up to a year, by month beyond. Weight with its trend, body fat, lean mass, calories and protein against the targets, steps against the goal, sleep, resting heart rate, training minutes, volume and sport calories; touch or drag to read any bar.
 - **PDF report with charts** (`HealthReportPdf`, A4): the period's numbers and charts; medicines only when ticked for that report, with doses taken of those scheduled.
