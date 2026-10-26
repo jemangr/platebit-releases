@@ -2,6 +2,9 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.58.1 (112)
+- No problem-report button in the top bar (`BrandBar` `onReport = null`); reporting stays in Me → About and on shake.
+
 ## 1.58.0 (111)
 - **Same kg and reps on every set** (`SessionEdits.sameAs`, `sameFromFirst`, `SameSets`): a checkbox per exercise in the workout; a change to one set goes to the working sets not ticked yet (not warm-ups, not drop sets); remembered per exercise.
 - **Before the weights** (`WarmUpCard`, `Mobility.WARMUP_ID`, `Mobility.Kind.WARMUP`, `MobilitySessionRoute`): at the start of a workout, a 6-minute guided warm-up or the stretches, back to the workout after; hidden once a session was done since the workout began, or skipped.
