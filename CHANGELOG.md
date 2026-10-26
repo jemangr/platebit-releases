@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.49.0 (102)
+- **Figures drawn by the app** (`Figures`, `FigureView`, `MoveView`): a stick figure of fixed limb lengths posed by joint angles (side or front view), stood on the ground by its lowest point, a curved spine, far limbs dimmed; movements are keyframes eased in a loop, framed by the union of their bounds. No photos, no licences, no internet.
+- `Yoga`: 42 asanas with Sanskrit names and cues, and Ba Duan Jin's eight movements as animations. Yoga and qigong sessions in the mobility player (`Mobility.Kind`, `Step.figure`; mirrored on the second side): sun salutation, back, hips and legs, standing balance, evening wind-down, Ba Duan Jin. A grid of every pose (`YogaPosesContent`). Poses and movements log as timed holds; Health Connect gets yoga or exercise class.
+
 ## 1.48.0 (101)
 - Heart rate on walks: the watch shows it on the walk screen and sends it every 30 s (`WALK_HR`); the phone shows the current and the average (`WalkState.heartRate`, `averageHeartRate`, paused readings don't count) and writes the average into the walk's note.
 - Metronome for walks (`WalkPrefs.metronome`, 100–140 a minute, `ToneGenerator` on the music stream, quiet while paused).
