@@ -2,6 +2,12 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.46.0 (99)
+- **Bodyweight** (`Calisthenics`, `BodyweightScreen`): ready routines for three levels (folder "Bodyweight"), and progression ladders (push, pull, squat, core, dips, glutes) with targets. A step is passed when its last session had two working sets or more, all at the target (reps, or seconds for holds); the workout summary shows "Ready for a harder exercise" and the coach gets the ready ladders. Hevy's "Push Up" matches "Push-up" and "Pushups".
+- **Guided mobility** (`Mobility`, `MobilityScreen`): four sessions of library stretches (morning 10′, after a workout 15′, back and desk 10′, before bed 10′) with a timer per stretch, both sides where needed, text-to-speech cues, a breathing circle (4/4 to 4/7), the library's photos alternating, pause, previous and next, the screen kept on; saved as a workout of timed holds. Library stretches are now TIME by default.
+- **Food list**: about 130 more dishes (Italian, Spanish, Cypriot, Turkish, Levantine, Greek mezes, Chinese, Japanese, Mexican, Argentinian, Brazilian, Peruvian, Korean, Vietnamese, Thai, Indian, American, brunch). A dish named with "with"/"με" is read as one food when its full name beats each part alone.
+- The coach's ordering prompt and region hint name more cuisines.
+
 ## 1.45.1 (98)
 - Every version's notes are built into the app (`release-notes/*.md` and this CHANGELOG copied into `assets/notes/` at build time; `VersionNotes`). About → What's new in each version lists them, newest first.
 - Updating over skipped versions shows each one's own notes from the installed version to the new one (GitHub's release list, each release's part before "Από προηγούμενες εκδόσεις"); the What's new after updating does the same from the built-in notes.
