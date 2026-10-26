@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>Your AI coach for food, training and recovery.</b><br>
-  One Android app for what you eat, how you train, how you sleep and move, and the medicines you take, with an AI coach in Greek and English that knows all of it and helps you act on it.
+  One Android app for what you eat, how you train, how you sleep and move, and the medicines you take, with an AI coach in your language that knows all of it and helps you act on it.
 </p>
 
 <p align="center">
@@ -139,7 +139,7 @@ Platebit is built around one coach that sees the whole picture: the meals you lo
 - ⌚ **Health Connect.** Steps, workouts, sleep and heart rate from your watch or ring, and weigh-ins from scales such as Withings or Samsung. Platebit reads, and writes your meals, water and workouts there only if you turn that on; its "How to connect correctly" guide shows which app writes what, so food and workouts are never counted twice; the same workout from two apps counts once.
 - 🔑 **Bring your own AI.** DeepSeek, Gemini, OpenAI, Claude, OpenRouter or any OpenAI-compatible service. The step-by-step setup connects OpenRouter with one tap and walks you through a key for the others. You pay the provider directly, or use its free quota. With your own key nothing goes through us; without one, there's Platebit Pro AI Cloud.
 - 📈 **AI use and limits.** Requests and tokens per day, week and month, with your own limits, warnings at 80% and 100% and an optional stop.
-- 🇬🇷 **Greek and English.** Pick the language in Settings → Appearance → Language (or in Android's app language settings).
+- 🌍 **Seven languages:** Greek, English, Italian, Spanish, French, German and Portuguese (Portugal). Pick one in Settings → Appearance → Language (or in Android's app language settings). The translations are new: see [translations](https://github.com/jemangr/platebit-releases/tree/main/translations) to suggest a fix.
 - 🔒 **Private by design.** No account, no ads, no tracking. Your data stays on your phone; photos and questions go only to the AI you pick (through our server only if you use Platebit Pro AI Cloud).
 
 ## Install

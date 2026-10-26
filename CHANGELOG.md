@@ -2,6 +2,13 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.53.0 (106)
+- **French, German and Portuguese (Portugal)** (`AppLanguage.FRENCH`, `GERMAN`, `PORTUGUESE`; `assets/i18n/fr.json`, `de.json`, `pt.json`), with widget names, the per-app language list, speech and the coach's language. "Suggest a better translation" for every language other than Greek and English (`I18n.newTranslation`). The day heading puts the day before the month outside English and Greek (`dayPattern`).
+- The translations are published with each push to the releases repo (`translations/`, with a "Translation fix" issue form).
+- **Fibre, sugars and sodium for every food of the list** (`FoodMicros`, typical values per 100 g from food tables), carried into meals logged from the list, Quick add and the coach's cards (`ActionFood` got the three fields).
+- An evening note on fibre and sodium (`ReminderKind.MICROS`, `MicrosCheck`): 90 minutes after dinner, only when most of the day's foods have values and sodium is over 2,000 mg or fibre under half its target; its own switch and channel.
+- 37 foods: quinoa, a salmon and quinoa bowl, French, German and Portuguese favourites.
+
 ## 1.52.0 (105)
 - **Italian and Spanish** (`AppLanguage.ITALIAN`, `SPANISH`): catalogs in `assets/i18n/it.json` and `es.json` (every text the Greek covers, same placeholders; `OtherLanguagesTest`), loaded when the language is chosen or the phone speaks it. Dates, numbers (decimal comma), the coach's reply language and the spoken cues follow it; widgets and the Android per-app language list too (`values-it`, `values-es`, `locales_config`). Gym exercise names stay in English.
 - "Suggest a better translation" in Settings for Italian and Spanish (`TranslationFixDialog`): where, what it says, what it should say, shared from the phone.
