@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.50.0 (103)
+- 80 sports (`Sports.Watch`: worn, sometimes for fun but not in matches, not worn). The picker labels each; the form says plainly whether a smartwatch would have the session already, and warns when Health Connect has a workout overlapping the chosen time. Watch-worn sports default to "had my phone or watch on me" (no steps added).
+- Today: a "Bodyweight, mobility and sports" card (`HomeCard.MOVES`) with a "new" mark until the sport screen is opened; the gear on Today opens Home cards (`HomeCards`, `HomeCardsEditor`): show or hide each card and order them; new cards take their automatic place (`HomeLayout.arrange`).
+- A spotlight notification for sports without a watch; the coach gets the last 7 days' sport calories next to the weight trend.
+
 ## 1.49.0 (102)
 - **Figures drawn by the app** (`Figures`, `FigureView`, `MoveView`): a stick figure of fixed limb lengths posed by joint angles (side or front view), stood on the ground by its lowest point, a curved spine, far limbs dimmed; movements are keyframes eased in a loop, framed by the union of their bounds. No photos, no licences, no internet.
 - `Yoga`: 42 asanas with Sanskrit names and cues, and Ba Duan Jin's eight movements as animations. Yoga and qigong sessions in the mobility player (`Mobility.Kind`, `Step.figure`; mirrored on the second side): sun salutation, back, hips and legs, standing balance, evening wind-down, Ba Duan Jin. A grid of every pose (`YogaPosesContent`). Poses and movements log as timed holds; Health Connect gets yoga or exercise class.
