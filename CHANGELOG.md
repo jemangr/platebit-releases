@@ -2,6 +2,13 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.54.0 (107)
+- **Missed workouts** (`MissedTraining`, `TrainingMoves`): yesterday's planned workout that didn't happen shows on the Today card with Do it today, a short version (the first three exercises, a set fewer), Move it to the next free day, or Let it go. A walk for steps no longer counts as the day's workout (`MissedTraining.doneOn`). Moved workouts become that day's workout, on the card and in the training reminder.
+- Comebacks: a note on free days after 3, 7 and 10 days without training, then weekly (`ReminderKind.COMEBACK`, own switch and channel); after 10 days it suggests starting about 20% lighter. Every note has several wordings per coach tone, never the same twice in a row (`MissedTraining.variants`, `pick`); the training-day reminder uses them too. The coach hears about a missed workout and the days since the last one.
+- The coach is **Arni** in every language unless renamed (`CoachPersona.DEFAULT_NAME`).
+- **What's new in the app's language**: `release-notes/<language>/<code>.md` next to the Greek; the app picks its language, then English, then Greek (`VersionNotes.pick`); releases carry `notes-<language>.md` for the update dialog (`Release.notesByLanguage`).
+- The platebit.app pages (coming-soon and privacy, 7 languages) are built from `site/platebit-app`.
+
 ## 1.53.0 (106)
 - **French, German and Portuguese (Portugal)** (`AppLanguage.FRENCH`, `GERMAN`, `PORTUGUESE`; `assets/i18n/fr.json`, `de.json`, `pt.json`), with widget names, the per-app language list, speech and the coach's language. "Suggest a better translation" for every language other than Greek and English (`I18n.newTranslation`). The day heading puts the day before the month outside English and Greek (`dayPattern`).
 - The translations are published with each push to the releases repo (`translations/`, with a "Translation fix" issue form).
