@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.51.0 (104)
+- **Long-term charts** (`LongTerm`, `ChartsScreen`, `BarChart`): one span for all (1 month, 3, 6, a year, all), bars by day up to ~3 months, by week up to a year, by month beyond. Weight with its trend, body fat, lean mass, calories and protein against the targets, steps against the goal, sleep, resting heart rate, training minutes, volume and sport calories; touch or drag to read any bar.
+- **PDF report with charts** (`HealthReportPdf`, A4): the period's numbers and charts; medicines only when ticked for that report, with doses taken of those scheduled.
+- `ActivityHistory`: steps, sleep and resting heart rate kept day by day beyond Health Connect's 30 days (up to ~3 years), erased with everything else.
+
 ## 1.50.0 (103)
 - 80 sports (`Sports.Watch`: worn, sometimes for fun but not in matches, not worn). The picker labels each; the form says plainly whether a smartwatch would have the session already, and warns when Health Connect has a workout overlapping the chosen time. Watch-worn sports default to "had my phone or watch on me" (no steps added).
 - Today: a "Bodyweight, mobility and sports" card (`HomeCard.MOVES`) with a "new" mark until the sport screen is opened; the gear on Today opens Home cards (`HomeCards`, `HomeCardsEditor`): show or hide each card and order them; new cards take their automatic place (`HomeLayout.arrange`).
