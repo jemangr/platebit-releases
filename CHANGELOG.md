@@ -2,6 +2,12 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.48.0 (101)
+- Heart rate on walks: the watch shows it on the walk screen and sends it every 30 s (`WALK_HR`); the phone shows the current and the average (`WalkState.heartRate`, `averageHeartRate`, paused readings don't count) and writes the average into the walk's note.
+- Metronome for walks (`WalkPrefs.metronome`, 100–140 a minute, `ToneGenerator` on the music stream, quiet while paused).
+- `VoiceFocus`: transient "may duck" audio focus around each spoken cue (walk, mobility, coach), with speech as navigation guidance; music is lowered, never paused.
+- Android 16 Live Updates (`LiveUpdates`, `POST_PROMOTED_NOTIFICATIONS`): the workout and walk notifications ask to be promoted, with a short chip text (sets done, steps; the rest countdown while resting) and a `ProgressStyle` bar (a segment per exercise; fast and easy intervals).
+
 ## 1.47.0 (100)
 - **Sports logged by hand** (`Sports`, `SportLog`, `SportScreen`): about 50 sports in seven groups with Greek names for search, three levels each (team: with friends / team training / match; racket; combat; general), duration, end time (today or yesterday), an optional average heart rate and a note. Calories are MET × kg × hours from the 2024 Adult Compendium (padel and beach rackets marked as estimates), or Keytel et al. 2005 from the heart rate; steps are typical real steps a minute for the sport and level (0 when not on foot).
 - Estimated steps of sports done without the phone or watch on are added to the day (`ActivityMerge.withSports`, `ActivityDay.estimatedSteps`); the activity card says how many. Sports show on the activity card, the done screen (minutes, kcal, steps, level, the method), the share card and caption, the coach's data and the weekly review.
