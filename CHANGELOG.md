@@ -2,6 +2,12 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.64.0 (118)
+- Permissions (`AppSettings`, `rememberPermissionAsk`, `PermissionCard`, `NotificationsOffCard`): a permission turned down for good opens the app's settings instead of a prompt that no longer shows (camera in Scan, body and workout photos, microphone in the coach and Live, phone steps, walks, scale Bluetooth). Notifications off: a card with what won't arrive and a Turn on button in Reminders, Sounds and watch and Medicines; asked once at the first live workout. Walks ask for precise and approximate location together and say when precise is missing. The scale row warns without Nearby devices.
+- "All settings" at the bottom of the pages a gear opens (settings sections, Sounds and watch, profile sections).
+- How you feel: "Not feeling well?" (`Mood.SICK`, `Entry.sick`, `sickToCoach` asked with the check-in) goes to the coach to ease off training (`Mood.illnessForCoach`), even without the mood diary; check-ins show their time and can be updated during the day from Today.
+- `MedKind.DRINK` (🥤) for creatine, electrolytes and amino acids, the ones Platebit added relabelled once (`MedStore.drinksLabel`). The medicines card title has its own line.
+
 ## 1.63.0 (117)
 - Supplements: Today's card is "Medicines and supplements"; vitamin D and omega-3 from the supplement answers can go there with a daily reminder; electrolytes and amino acids (`Supplements.electrolytes`, `aminoAcids`) become `MedFrequency.WITH_WORKOUT` entries, logged as taken when a live workout ends (`MedStore.logWorkout`, phone and watch), never due or missed.
 - Suggestions after an update (`UpdateActions`, `UpdateActionsPopup`): new things that need a tap, only when they still apply, each with a button that goes there; a fresh install starts with none.
