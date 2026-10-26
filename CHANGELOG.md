@@ -2,6 +2,12 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.63.0 (117)
+- Supplements: Today's card is "Medicines and supplements"; vitamin D and omega-3 from the supplement answers can go there with a daily reminder; electrolytes and amino acids (`Supplements.electrolytes`, `aminoAcids`) become `MedFrequency.WITH_WORKOUT` entries, logged as taken when a live workout ends (`MedStore.logWorkout`, phone and watch), never due or missed.
+- Suggestions after an update (`UpdateActions`, `UpdateActionsPopup`): new things that need a tap, only when they still apply, each with a button that goes there; a fresh install starts with none.
+- Body focus: period from the home cards editor (1, 3, 6, 12 months, everything; `HomeCards.focusMonths`), change counted from the first reading when the history is shorter, card only with fat or muscle.
+- Camera button in quick add (today only). Edit profile can open on one section (`OnboardingRoute.section`).
+
 ## 1.62.0 (116)
 - Body fat and muscle without a smart scale: optional fields in the weigh-in dialog for a measurement (InBody, DEXA, a dietitian), stored on the weigh-in (`fatPct`, `muscleKg`) and shown to the coach; a US Navy body-fat estimate from waist, neck (and hips) and height (`BodyFatEstimate`) fills the body focus card when nothing measured fat, marked as an estimate.
 
