@@ -2,6 +2,12 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.58.0 (111)
+- **Same kg and reps on every set** (`SessionEdits.sameAs`, `sameFromFirst`, `SameSets`): a checkbox per exercise in the workout; a change to one set goes to the working sets not ticked yet (not warm-ups, not drop sets); remembered per exercise.
+- **Before the weights** (`WarmUpCard`, `Mobility.WARMUP_ID`, `Mobility.Kind.WARMUP`, `MobilitySessionRoute`): at the start of a workout, a 6-minute guided warm-up or the stretches, back to the workout after; hidden once a session was done since the workout began, or skipped.
+- **Gemini for the voice only** (`AiVoiceRoute`, `AiSetupViewModel.forVoice`, `GeminiVoiceOffer`): offered in Live without a Gemini key, after setting up another engine and after turning on Pro AI Cloud; the key is saved without changing the main engine.
+- The phone voice says "Platebit" right (`VoiceText.pronounce`).
+
 ## 1.57.0 (110)
 - **Type a time** (`TimeInputDialog`, `TypedTime`): tap the time in Medications, meal times, own values and onboarding to type it (Material 3 `TimeInput`, 24-hour); + and − stay.
 - **Medicines every few weeks** (`MedFrequency.WEEKS`, `Medication.everyWeeks`, `MedSchedule.weeksBetween`): on the chosen days, every 2 to 12 weeks, counted from the week it was set; reminders and the diary follow it. Editing a medicine keeps its note.
