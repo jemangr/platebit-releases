@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.57.0 (110)
+- **Type a time** (`TimeInputDialog`, `TypedTime`): tap the time in Medications, meal times, own values and onboarding to type it (Material 3 `TimeInput`, 24-hour); + and − stay.
+- **Medicines every few weeks** (`MedFrequency.WEEKS`, `Medication.everyWeeks`, `MedSchedule.weeksBetween`): on the chosen days, every 2 to 12 weeks, counted from the week it was set; reminders and the diary follow it. Editing a medicine keeps its note.
+
 ## 1.56.0 (109)
 - **How you feel** (`Mood`, `MoodStore`, `MindScreen`, `HomeCard.MOOD`, Settings → Profile): a daily check-in (five faces, energy, stress, tags, a note), the last 14 days, and gentle support on hard days (a "very low" today, or low on three of the last seven days) with 112 and the country's crisis line (`Mood.helpline`, from the phone's network or SIM country). On the phone only; the coach sees it only when allowed (`MoodState.coachSees`, off by default). Both coach prompts got a rule for talk of suicide or self-harm: stop coaching, point to 112 or the crisis line, no jokes.
 - **Guided breathing** (`Breathing`, `BreathingPlayer`): slow breathing, box, 4-7-8 and the physiological sigh, in whole rounds, with voice cues and a haptic tick on each phase; holds can be turned off.
