@@ -2,6 +2,12 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.61.0 (115)
+- Health card on Today (`HomeCard.HEALTH`, `HealthTrends`): blood pressure, sleep score, average heart rate and blood oxygen, 2×2 tiles with a 30-day line and the week against the week before; only what was measured.
+- Body composition focus card (`HomeCard.BODY`, `BodyFocus`): weight, its 90-day line, muscle % and fat % with 30-day changes; muscle and fat from a smart scale.
+- Blood pressure read from Health Connect (`READ_BLOOD_PRESSURE`, asked from Devices for people already connected); kept with sleep score, average heart rate and SpO2 in the long-term history (`ActivityHistory.Day`) and charted in Charts.
+- Privacy texts list blood pressure.
+
 ## 1.60.0 (114)
 - Health notes for the AI Coach: a switch in the health step (`HealthNotes.coachSees`, off by default) and a one-time question for existing profiles with notes (`HealthNotesAsk`). GLP-1 goes to the coach through GLP-1 mode's own switch. Coach texts list what the coach sees.
 - Profile editing in sections (`ProfileSections`): each section opens and saves on its own, with a prompt for unsaved changes.
