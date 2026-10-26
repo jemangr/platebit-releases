@@ -2,6 +2,17 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.59.0 (113)
+- **Phone voice choice** (`PhoneVoice`, `PhoneVoiceDialog`, `CoachSpeaker.voices`/`tryVoice`): a "Voice" button in the phone-voice Live lists the phone's voices for the language, plays a sample, saves the pick per language, links to the phone's speech settings and offers Gemini. The coach persona prompt says the voice isn't the coach's to change and where it's changed. The gender guess also falls back to the default voice of the language.
+- **Voice language list** (`VoiceLanguageDialog`) instead of cycling on each tap.
+- **AI step in onboarding** (`OnboardingViewModel.Step.AI`, `AiStep`): Pro AI Cloud one tap, own AI with the guide, or later; in Quick too, not in edit mode.
+- **Fix: the Pro AI Cloud offer never showed** (`AiSettings.working`): `activeEngines` always lists the main engine even without a key; the popup and the AI step now check for a working engine.
+- **Evening mood reminder** (`ReminderKind.MOOD`, `ReminderPlan.moodTime`, `NotifyKind.MOOD`): an hour before sleep, off by default, skipped after a check-in; switch in How you feel and in Reminders.
+- Confirmations: turning off the AI Coach, deleting the own program (keeps routines), importing a backup.
+- The warm-up isn't saved as a workout (`Mobility.log` returns null for `Kind.WARMUP`; `WarmUpDone` hides the card).
+- Meal plan: no "Ate it"/"Change amounts" on future days. Reports backup uses `FullBackup.make`. Reset all turns off auto and Drive backups. Notifications: delivery chips wrap, the Watch chip hides while the watch app is off. Tips: a fresh install marks the existing ones seen (`Spotlights.baseline`).
+- Lint: `UnusedMaterial3ScaffoldPaddingParameter` suppressed on `MorselNavHost`.
+
 ## 1.58.1 (112)
 - No problem-report button in the top bar (`BrandBar` `onReport = null`); reporting stays in Me → About and on shake.
 
