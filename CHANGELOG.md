@@ -2,6 +2,14 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.69.1 (124)
+- Version 1.69.1: phone `versionCode` 124, watch 1000124, both "1.69.1".
+- The keyboard: the app's `NavHost` takes `Modifier.imePadding()`, so every page ends above the keyboard (the window is `adjustResize` and edge to edge). Pages that already pad for the keyboard get nothing extra, since the inset is consumed once.
+- Mediterranean diet card: the score is worked out on `Dispatchers.Default` (it ran on the main thread each time the card came into view) and kept per day and meal count (`MedDietMemo`). `FoodList.normalize` keeps its results (precompiled regexes, a bounded cache), and `FoodList.match` keeps its matches, which also speeds up voice logging and search.
+- Coach time: the context's "## Now" line names the zone and offset (`CoachContext.localZone`, "(local time, Europe/Athens, UTC+02:00)") and says every time in the data is local, never UTC or GMT; the photo and text analysis's "Local time" line too. Gemini Live is told the time is when the call started.
+- Coach persona: asked whether it listens all the time, the coach says it hears nothing unless the AI Coach button (Live) or the microphone is tapped, and never in the background.
+- Strong language (adult, Banter, its own consent): swearing in almost every reply and stronger words; the same limits (no slurs, nothing about body, weight, looks or health, none on health, pain, medicines or mood).
+
 ## 1.69.0 (123)
 - Version 1.69.0: phone `versionCode` 123, watch 1000123, both "1.69.0".
 - Nutrients beyond the macros (`domain/MoreNutrients`): the food analysis (photo and text, every engine, the free cloud analyses too) asks for saturated fat besides fibre, sugars and sodium (`sat_fat_per_100g`, null when unknown; a `salt_per_100g` answer becomes sodium × 400; saturated fat clamped to the food's fat). Database version 6: `food_items.satFatPer100` (`MIGRATION_5_6`, schema `6.json`; `Release169MigrationTest` on the JVM, `MigrationTest.version5To6…` on the emulator). Carried through scans, the meal screen (a per-100 g line on each food, a total line with salt in g and sodium in mg), Add item from Open Food Facts (`saturated-fat_100g`), saved products, the coach's logged foods, the food list and voice logging.
