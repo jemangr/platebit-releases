@@ -83,7 +83,7 @@
 - **Υγεία και ρουτίνα:** υπενθυμίσεις για φάρμακα με μηνιαίο ημερολόγιο, και υπενθυμίσεις για γεύματα, νερό, προπόνηση και ζύγισμα, η καθεμία με δικό της ήχο. Εβδομαδιαία ανασκόπηση κάθε Κυριακή και widget στην αρχική οθόνη.
 - **Ιστορικό και αναφορές:** κάθε μέρα, εβδομάδα και μήνας με τους στόχους σου, αναφορές PDF για διαιτολόγο, προπονητή ή γιατρό, και αυτόματο αντίγραφο ασφαλείας.
 - **Ρολόι Wear OS:** η προπόνηση στον καρπό (επόμενο σετ, κιλά και επαναλήψεις, ✓, ξεκούραση με δόνηση, παλμοί), ξεκούραση με βάση τους παλμούς, μέτρημα επαναλήψεων (beta), και tile με τις θερμίδες και τα μακροθρεπτικά της μέρας.
-- **Platebit Pro AI Cloud (δωρεάν στο beta):** AI χωρίς λογαριασμό και χωρίς key, με 150 αναλύσεις φαγητού και 300 μηνύματα στον coach τον μήνα. Οι πρώτοι testers το ενεργοποιούν μέσα από την εφαρμογή με το όνομά τους.
+- **Platebit Pro AI Cloud (beta, 20 θέσεις, δωρεάν μέσα στην εφαρμογή):** AI χωρίς λογαριασμό και χωρίς key, με 150 αναλύσεις φαγητού και 300 μηνύματα στον coach τον μήνα. Οι πρώτοι testers το ενεργοποιούν μέσα από την εφαρμογή με το όνομά τους.
 - **Backup στο Google Drive** κάθε εβδομάδα, και επαναφορά στο νέο κινητό με ένα πάτημα.
 - **Χωρίς λογαριασμό και χωρίς διαφημίσεις:** τα δεδομένα μένουν στο κινητό σου. Επιλέγεις εσύ ποιο AI χρησιμοποιείς.
 
@@ -110,7 +110,7 @@ Platebit is built around one coach that sees the whole picture: the meals you lo
 - 🔁 **The coach changes things for you.** Ask it and it prepares the change as a card: a meal's grams, macros, step goal, a measurement, your day's times, reminders, a planned meal, or your program (sets, reps, rest, adding or swapping an exercise, which days each workout is on, next time's weight). Medicines, settings and keys stay yours.
 - 🤖 **AI Coach.** Tap the button in the middle of the screen to talk live, or hold it for the chat. It knows your meals, water, weigh-ins, body composition and measurements, steps, sleep and heart rate, your program and every set of the last two weeks, your meal plan, and the medicines you chose to share; it answers from your own numbers and prepares changes as cards you accept or decline. It only talks about food, training, sleep, your data and the app.
 - 🎙️ **Gemini Live (optional).** With a Gemini key, Live can use Gemini's own voice: it answers as you talk and you can interrupt it mid-sentence; what was said is added to the chat.
-- ☁️ **Platebit Pro AI Cloud (free in the beta).** No account and no key: food analyses and the coach work right away, 150 analyses and 300 coach messages a month. The first testers turn it on inside the app with just their name; requests pass through our server to DeepSeek, and we keep only the name and usage counters.
+- ☁️ **Platebit Pro AI Cloud (beta: 20 places, free in the app).** No account and no key: food analyses and the coach work right away, 150 analyses and 300 coach messages a month. The first testers turn it on inside the app with just their name; requests pass through our server to DeepSeek, and we keep only the name and usage counters.
 - 📊 **Weekly review.** Sunday at 20:00: the week's calories against target, days on target, protein, water, trend weight, workouts and medicines, plus one concrete thing to try next week.
 
 **Nutrition**
@@ -167,7 +167,7 @@ Platebit is built around one coach that sees the whole picture: the meals you lo
 
 1. [Download the APK](https://github.com/jemangr/platebit-releases/releases/latest/download/Platebit.apk) on your phone and open it. Allow "Install unknown apps" if Android asks.
 2. Answer the setup questions (about a minute; the rest can wait).
-3. Open **Settings → AI engine → Step-by-step setup**: take a free Platebit Pro AI Cloud place while there are some, or connect your own AI.
+3. Open **Settings → AI engine → Step-by-step setup**: take one of the 20 free Platebit Pro AI Cloud places (beta) while there are some, or connect your own AI.
 4. Tap the camera and scan a meal.
 
 Updates arrive inside the app (**Settings → Updates**). Needs Android 12 or newer. To check the file, compare its SHA-256 with the one shown next to it on the [release page](https://github.com/jemangr/platebit-releases/releases/latest). Prefer an app store–like updater? [Obtainium](https://github.com/ImranR98/Obtainium) works with this page: add `https://github.com/jemangr/platebit-releases` and set the APK filter to `^Platebit\.apk$`.
