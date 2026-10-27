@@ -14,10 +14,14 @@
 </p>
 
 <p align="center">
+  <img src="docs/demo.gif" width="240" alt="A photo of a meal becomes calories and macros, then Today, the AI Coach and a workout">
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/36-scan-result.png" width="24%" alt="A photo of the plate: calories and macros to correct with a tap">
   <img src="docs/screenshots/1-diary.png" width="24%" alt="Today: calories, macros, water, activity and medicines">
   <img src="docs/screenshots/11-workout.png" width="24%" alt="Logging a workout with photos, last time's weights and the rest timer">
-  <img src="docs/screenshots/14-workout-done.png" width="24%" alt="Stats after a workout: records, muscles, the week">
-  <img src="docs/screenshots/13-exercise-picker.png" width="24%" alt="Exercise library with photos, search and filters">
+  <img src="docs/screenshots/37-live-coach.png" width="24%" alt="The AI Coach, also by voice">
 </p>
 <p align="center">
   <img src="docs/screenshots/40-watch-workout-round.png" width="26%" alt="Wear OS: the next set with weight, reps and a big tick">
@@ -25,20 +29,29 @@
   <img src="docs/screenshots/41-watch-food-tile-round.png" width="26%" alt="Wear OS tile: today's calories ring with protein, carbs and fat">
 </p>
 <p align="center"><sub>On your wrist: the workout and today's food, on Wear OS.</sub></p>
+
+<details>
+<summary><b>Περισσότερες οθόνες / More screenshots</b></summary>
+
 <p align="center">
+  <img src="docs/screenshots/14-workout-done.png" width="24%" alt="Stats after a workout: records, muscles, the week">
+  <img src="docs/screenshots/13-exercise-picker.png" width="24%" alt="Exercise library with photos, search and filters">
   <img src="docs/screenshots/16-activity.png" width="24%" alt="Steps, the day's workouts, sleep stages and heart rate">
   <img src="docs/screenshots/19-readiness-steps.png" width="24%" alt="Readiness before a workout and the last 14 days of steps">
-  <img src="docs/screenshots/12-exercise-history.png" width="24%" alt="Exercise history with records and estimated 1RM">
-  <img src="docs/screenshots/20-plan-tab.png" width="24%" alt="Plan tab: today's meals and workout, the meal plan, shopping list and program">
 </p>
 <p align="center">
+  <img src="docs/screenshots/12-exercise-history.png" width="24%" alt="Exercise history with records and estimated 1RM">
+  <img src="docs/screenshots/20-plan-tab.png" width="24%" alt="Plan tab: today's meals and workout, the meal plan, shopping list and program">
   <img src="docs/screenshots/21-progress-tab.png" width="24%" alt="Progress tab: weight trend, the training week and recent workouts">
+  <img src="docs/screenshots/53-charts.png" width="24%" alt="Charts for any period, and a PDF for your doctor or dietitian">
+</p>
+<p align="center">
   <img src="docs/screenshots/22-now.png" width="24%" alt="The Now card: the one next thing to do, with one button">
   <img src="docs/screenshots/2-meal-plan.png" width="24%" alt="Meal plan built from calories and protein">
   <img src="docs/screenshots/4-history.png" width="24%" alt="History with goals per day, week and month">
+  <img src="docs/screenshots/3-training.png" width="24%" alt="Training program">
 </p>
 <p align="center">
-  <img src="docs/screenshots/3-training.png" width="24%" alt="Training program">
   <img src="docs/screenshots/24-routines.png" width="24%" alt="Routine library: any routine on any day">
   <img src="docs/screenshots/17-meds-calendar.png" width="24%" alt="Medicines calendar">
   <img src="docs/screenshots/15-measurements.png" width="24%" alt="Body measurements">
@@ -53,6 +66,8 @@
 <p align="center">
   <img src="docs/screenshots/10-widget.png" width="60%" alt="Home-screen widget">
 </p>
+
+</details>
 
 
 ## Στα ελληνικά
@@ -82,6 +97,10 @@
 ## What it does
 
 Platebit is built around one coach that sees the whole picture: the meals you log, the sets you lift, how much you walked and slept, your weight and measurements, and your medicines if you let it. Everything below feeds it, and everything it suggests comes back as a change you accept or decline.
+
+<details>
+<summary><b>Everything it does</b></summary>
+
 
 **Five tabs, one next step**
 - 🧭 **Today, Plan, Coach, Progress, Me.** The AI Coach sits in the middle of the bar (tap to talk, hold for the chat). Today leads with a **Now** card: the one next thing to do, with one button: log the meal that's due (or eat it as planned), take the morning medicines, start today's workout, weigh in, drink water.
@@ -141,6 +160,8 @@ Platebit is built around one coach that sees the whole picture: the meals you lo
 - 📈 **AI use and limits.** Requests and tokens per day, week and month, with your own limits, warnings at 80% and 100% and an optional stop.
 - 🌍 **Seven languages:** Greek, English, Italian, Spanish, French, German and Portuguese (Portugal). Pick one in Settings → Appearance → Language (or in Android's app language settings). The translations are new: see [translations](https://github.com/jemangr/platebit-releases/tree/main/translations) to suggest a fix.
 - 🔒 **Private by design.** No account, no ads, no tracking. Your data stays on your phone; photos and questions go only to the AI you pick (through our server only if you use Platebit Pro AI Cloud).
+
+</details>
 
 ## Install
 

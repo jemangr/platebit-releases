@@ -2,6 +2,25 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.66.0 (120)
+- Undo for deletes (`DeferredDelete`, `UndoBar`): a deleted meal or weigh-in leaves the screen at once and is removed after 6 seconds unless undone; a removed exercise or set in a workout can be put back. Body photos ask before deleting.
+- Finishing a workout with unticked sets asks first.
+- Supersets go round (A1, B1, A2, B2) in the next set shown outside the app, warm-ups first; rest only after the round.
+- Gemini Live in the voice language picked (prompt rule and speech language for it, es, fr, de, pt too). Leaving the app ends the call and the screen offers to call again instead of staying on "Connecting". Only cards still waiting show during a call.
+- Units (`Units`, `UnitChoice`): metric, US and UK sets and each unit on its own (body weight kg/lb/st, gym weights kg/lb, height cm/ft-in, measurements cm/in, water ml/fl oz, distance km/mi), first chosen from the network's country; everything stays stored metric. A machine in the other unit is switched per exercise (`ExerciseLoadUnits`), in the workout, plate calculator, history, records, notification, widget and watch; 5 lb steps in pounds. The coach is told the units the user sees.
+- Today: the order chosen by the user's feedback (What's next, motivation, calories, activity, health, medicines, meals, bodyweight and sports, training…); the motivation of the day (200 lines in 7 languages, `assets/motivations`), with a one-time hint about the gear; the logo and the user's own text as opt-in cards.
+- Medicines: + and gear beside the title; anything taken outside the schedule is typed freely and kept as "when needed" (private to the coach). Deleting a medicine asks first.
+- Watch: guided breathing with vibration (4 in, 6 out), logged on the phone; heart rate's sensor permission asked from a card that says what it's for, or the settings once refused. Breathing sessions to Health Connect as mindfulness when turned on (Health Connect versions that have it).
+- A spoken yes in Live never deletes; dates in Greek as "Τρίτη 27 Οκτωβρίου"; meals named from the user's own meal times; a saved-unchanged calorie, water or step target stays automatic; a typed key is kept with Done; "New ideas" asks first; "Make today's sets easier" once per workout; drop sets keep their weights; water after midnight goes to the new day; the phone's Back counts a breathing session.
+- The release waits for the emulator test to pass.
+
+## 1.65.0 (119)
+- Notification budget (`NotifyBudget`): a daily limit (default 6) and quiet hours from the profile's sleep to wake, for reminders, the weekly review, tips and AI-usage notices; medicines, the end of rest and updates exempt and uncounted. Reminders share a group. Water reminders wait until water was logged in the last month. Settings rows in Notifications.
+- Reminder and medicine alarms are rescheduled inside their receivers (awaited) and set with `setExactAndAllowWhileIdle` / `setAndAllowWhileIdle`.
+- Medicines: due doses up to 3 hours late and across midnight (`MedSchedule.dueNow`), logs kept 400 days, days with nothing answered shown as "not marked" (`DayResult.NOT_MARKED`) and left out of the month's share.
+- End of rest as a system alarm (`RestAlarm`, `RestAlarmReceiver`), shown once with the service's own clock.
+- Health Connect body fat, lean mass and weight are kept per day (`ActivityDay.weightKg/leanKg`) and feed the body focus card without importing weigh-ins; muscle from lean mass (`BodyCompositionCalc.muscleFromLean`). The connection is checked on every resume, so the Health card shows after a quick restart.
+
 ## 1.64.0 (118)
 - Permissions (`AppSettings`, `rememberPermissionAsk`, `PermissionCard`, `NotificationsOffCard`): a permission turned down for good opens the app's settings instead of a prompt that no longer shows (camera in Scan, body and workout photos, microphone in the coach and Live, phone steps, walks, scale Bluetooth). Notifications off: a card with what won't arrive and a Turn on button in Reminders, Sounds and watch and Medicines; asked once at the first live workout. Walks ask for precise and approximate location together and say when precise is missing. The scale row warns without Nearby devices.
 - "All settings" at the bottom of the pages a gear opens (settings sections, Sounds and watch, profile sections).
