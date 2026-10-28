@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.74.1 (131)
+- Version 1.74.1: phone `versionCode` 131, watch 1000131, watch faces 2000131, all "1.74.1".
+- `FoodMinerals`: the 319 foods checked against USDA FoodData Central (SR Legacy 2018-04 and FNDDS 2021–2023), unfortified values kept for bread, pasta, rice and flour dishes. Updated: egg (171287), beef mince (174034), shrimp (175180), tuna in water (171986), tofu (172476), bratwurst (171620), seaweed salad, dal and palak paneer (FNDDS, scaled to the list's portion). New test `singleFoodsMatchUsdaSrLegacy`.
+- Pictures for the site: every tile (`WatchTileShotsTest`, `docs/screenshots/42-watch-tile-*.png`) and the four watch faces (`46-watch-face-*.png`, from their previews).
+
 ## 1.74.0 (130)
 - Version 1.74.0: phone `versionCode` 130, watch 1000130, watch faces 2000130, all "1.74.0".
 - Open on computer (Me → Data, `pc/`, `ui/settings/PcLiveUi`): a foreground service (`PcLinkService`, type `connectedDevice`, `FOREGROUND_SERVICE_CONNECTED_DEVICE` and `CHANGE_NETWORK_STATE`, `stopWithTask`, never restarted) runs a small HTTPS server on the phone's Wi-Fi IPv4 address only (NanoHTTPD 2.3.1, the one new dependency; port 8443, another when taken), TLS 1.2/1.3 only, never compressed, at most 24 connections and 2 KB bodies. The screen shows `https://<address>:<port>`, a 6-digit code and the certificate's SHA-256 fingerprint, with "Don't use this on public Wi-Fi"; the ongoing notification says "Computer connected" with Stop. No network call to the internet.
