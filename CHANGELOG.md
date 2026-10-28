@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.75.3 (136)
+- Version 1.75.3: phone `versionCode` 136, watch 1000136, watch faces 2000136, all "1.75.3".
+- Arni watch face: the orb's breathing scale (`sin([SECONDS_IN_DAY])` transforms) hid the whole orb on a Wear OS 5 watch (API 34); removed, with a solid lime core under the glows.
+- Watch faces: small text up to 25% larger where its box allows (Classic, My day, Lean, Arni), no layout change.
+
 ## 1.75.2 (135)
 - Version 1.75.2: phone `versionCode` 135, watch 1000135, watch faces 2000135, all "1.75.2".
 - Open on computer: the phone answers only addresses on its own network (`PcApi.isLocal`: IPv4 private, link-local and loopback, IPv6 ::1, fe80::/10, fc00::/7, IPv4-mapped; 403 otherwise, before any route).
