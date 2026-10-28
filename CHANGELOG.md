@@ -2,6 +2,17 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 2.0.0 (137)
+- Version 2.0.0: phone `versionCode` 137, watch 1000137, watch faces 2000137, all "2.0.0".
+- Navigation: side menu (`ui/nav/AppMenu`, 22 tiles), bottom bar Today, Nutrition, Move, Health; sections with wrapping chips (`ui/nav/Sections`); Me from the top bar; "Edit cards" on Today.
+- Nutrients (`domain/NutrientReport`, `ui/nutrients`) by day, week and food; Food at home as its own screen; Nutrition ⚙ (`ui/nav/FoodSettings`, `data/FoodPrefs`).
+- Open on computer: menu, calendar, day/workout/period reports in their own tab, print, CSV (`data/PcReports`, `assets/export/page.html`); no ovulation or fertile labels.
+- Sports 80 → 201 (`domain/Sports`, group Gym and machines, icons `ui/training/SportIcons`); every MET checked against the full 2024 Adult and Wheelchair Compendium (`docs/plans/2.0-sports-met-check.md`), 135 corrected; the 47 without a Compendium activity kept as an estimate ("Estimated calories").
+- Yoga 42 → 97 drawn poses with care notes (`Yoga.Care`), 9 qigong and tai chi forms, 11 drawn routine moves, 36 new sessions (`Mobility.more`); second check of names, drawings, cues and care notes (`docs/plans/2.0-yoga-check.md`): 16 drawings redrawn.
+- Watch faces from `watchface/tools/faces.py` again: text 26–30, weather icons (`[WEATHER.CONDITION]`, `[WEATHER.IS_DAY]`), °C/°F by `[WEATHER.TEMPERATURE_UNIT]`, no gradients (Arni's orb a picture), new analog Sport and Tourbillon faces; `render.py`/`shoot.js` check every face in 7 languages; Google's validator in the 2.0 checks.
+- Nothing cut: `NavShotsTest` (German, Greek, English, normal and 1.3× text), secondary buttons wrap.
+- Greek in `GreekRelease200*` and the five catalogs.
+
 ## 1.75.3 (136)
 - Version 1.75.3: phone `versionCode` 136, watch 1000136, watch faces 2000136, all "1.75.3".
 - Arni watch face: the orb's breathing scale (`sin([SECONDS_IN_DAY])` transforms) hid the whole orb on a Wear OS 5 watch (API 34); removed, with a solid lime core under the glows.
@@ -11,9 +22,8 @@ Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version i
 - Version 1.75.2: phone `versionCode` 135, watch 1000135, watch faces 2000135, all "1.75.2".
 - Open on computer: the phone answers only addresses on its own network (`PcApi.isLocal`: IPv4 private, link-local and loopback, IPv6 ::1, fe80::/10, fc00::/7, IPv4-mapped; 403 otherwise, before any route).
 - Copy link and Share for the address; "Copy the platebit.app/pc link" (`PcHelp.rememberLink`, the address after "#" never reaches the site); problems and solutions (`PcHelp.ANSWERS`) on the screen and a link to platebit.app/pc.
-- Coach (`CoachPersona.prompt`): in every manner, and when swearing, never runs Platebit down and stands up for it; a real problem with the app goes to Report a problem (`[[open:report_problem]]`).
 - Watch: About at the end of the main list, with the watch app's version and build (`AboutChip`).
-- Greek in `GreekRelease1752` and the five catalogs. Tests: `PcLocalTest`, `PcAutoStopTest` (own-network address), `CoachStandsUpForTheAppTest`, watch screenshot `47-watch-about`.
+- Greek in `GreekRelease1752` and the five catalogs. Tests: `PcLocalTest`, `PcAutoStopTest` (own-network address), watch screenshot `47-watch-about`.
 
 ## 1.75.1 (134)
 - Version 1.75.1: phone `versionCode` 134, watch 1000134, watch faces 2000134, all "1.75.1".
