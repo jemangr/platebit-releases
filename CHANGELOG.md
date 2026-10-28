@@ -2,6 +2,19 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.75.0 (133)
+- Version 1.75.0: phone `versionCode` 133, watch 1000133, watch faces 2000133, all "1.75.0".
+- Watch alone (`wear/Solo`, `SoloScreens`, phone `wear/WatchSolo`): walk, run (GPS, else steps) or today's workout recorded on the watch, kept as data items on `/platebit/solo/` until the phone saves them (ack on `/platebit/solo-ack`, deduplicated by id).
+- Walks on the watch in pages (`wear/MovePager`): numbers (steps first, the day's steps in the ring), heart-rate zones below with minutes per zone (`ZoneClock`), pause and a hold-to-finish ring on the left, music on the right. The phone's walk now starts the ongoing activity (`WorkoutOngoing`) and the solo service has one too, so the watch returns to the app after the screen goes off; the phone listener no longer stops it during a walk.
+- Voice cues on the watch (`WatchSay`, `WatchSpeaker`, phone/watch/both), smart alarm (`SmartAlarm`, `WatchAlarmClock`, `LightSleep`, `SleepWatch`, bedtime note `reminders/Bedtime`).
+- Water: drinks logged as food count (`Drinks`, `DrinkWater`, on by default); the goal rises with heat (`data/Weather`, Open-Meteo, approximate location rounded to 0.1°, off by default) and training, never with a doctor's fluid limit; electrolytes against sweat and the day's caffeine on the water card (`domain/Hydration`, `data/WaterDay`).
+- What's at home (`domain/Pantry`, `data/PantryStore`, encrypted, in backups; `ui/plan/PantryScreen`): ticked list items, photos of the fridge or a receipt (`ai/PantryScan`, food names only, the receipt ticks the list), estimated use-by dates, a 09:30 use-soon note (`PantryCheck`); the planner prefers what's at home (`MealPlanner.pantryOption`).
+- Automations: the usual meal in the meal reminder (`UsualMeals`), trips across time zones (`reminders/Travel`: local, medicines at home time, or all at home time; DST at home changes nothing), walks noticed (`walk/WalkDetect`, Activity Recognition transitions, play-services-location 21.3.0), full calendar days (`BusyDays`, `BusyDayCheck`, READ_CALENDAR, event times only, off by default), Sunday's plan for next week and its list (`WeekAhead`, `GroceriesRoute(next)`).
+- Quick actions (`quick/`): Quick Settings tiles, shortcuts and App Actions (`res/xml/shortcuts.xml`), NFC tags (`platebit://do/…`).
+- Today: the shopping list card; the coach's style from the chat (`CoachPersonaDialog`).
+- Day steps: the larger of Health Connect and the phone, and at least the steps of recorded walks (`ActivityMerge.withWalks`); walk steps in the coach's workout list.
+- Greek in `GreekRelease175` and the five catalogs. Tests: `Release175Test`, wear `SmartAlarmTest`, `SoloTest`, new watch walk screenshots.
+
 ## 1.74.2 (132)
 - Version 1.74.2: phone `versionCode` 132, watch 1000132, watch faces 2000132, all "1.74.2".
 - Today's walk and camera buttons (`ui/dashboard/TodayButtons`, option Z of the owner's sample): the accent as a gem (radial light from the top left, a top shine, a darker rim, a glow in the accent's colour); around the walk button a ring with today's steps against the step goal (`Steps.goal`, as on the activity card), a soft glow under the progress; during a walk a pill with the steps and a thin bar of the same progress, drawn over the pill so it never widens it. The walk button says "%s of %s steps" to TalkBack. New test `TodayButtonsTest` (progress, both buttons clickable, dark, walking and light pictures).
