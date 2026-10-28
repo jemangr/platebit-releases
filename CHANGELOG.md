@@ -2,6 +2,12 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.75.1 (134)
+- Version 1.75.1: phone `versionCode` 134, watch 1000134, watch faces 2000134, all "1.75.1".
+- Shopping list: the user's own meals (one food of a placeholder 100 g) are read with `FoodList.read` and listed by their foods, named like the plan's (`Groceries.listName`); a meal it can't read is listed as "for N meals", never in grams.
+- Plan items can be taken off the week's list and put back (`GroceryTicks.hidden`, `remove`, `restore`, `shown`), in the app, on Today's card, on the watch and on the computer (`/api/shop` op `restore`, `shopOff`).
+- Tests: `GroceriesOwnMealTest`, `PcPhoneBackendTest`, `PcApiTest`.
+
 ## 1.75.0 (133)
 - Version 1.75.0: phone `versionCode` 133, watch 1000133, watch faces 2000133, all "1.75.0".
 - Watch alone (`wear/Solo`, `SoloScreens`, phone `wear/WatchSolo`): walk, run (GPS, else steps) or today's workout recorded on the watch, kept as data items on `/platebit/solo/` until the phone saves them (ack on `/platebit/solo-ack`, deduplicated by id).
