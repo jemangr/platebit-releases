@@ -2,6 +2,14 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.75.2 (135)
+- Version 1.75.2: phone `versionCode` 135, watch 1000135, watch faces 2000135, all "1.75.2".
+- Open on computer: the phone answers only addresses on its own network (`PcApi.isLocal`: IPv4 private, link-local and loopback, IPv6 ::1, fe80::/10, fc00::/7, IPv4-mapped; 403 otherwise, before any route).
+- Copy link and Share for the address; "Copy the platebit.app/pc link" (`PcHelp.rememberLink`, the address after "#" never reaches the site); problems and solutions (`PcHelp.ANSWERS`) on the screen and a link to platebit.app/pc.
+- Coach (`CoachPersona.prompt`): in every manner, and when swearing, never runs Platebit down and stands up for it; a real problem with the app goes to Report a problem (`[[open:report_problem]]`).
+- Watch: About at the end of the main list, with the watch app's version and build (`AboutChip`).
+- Greek in `GreekRelease1752` and the five catalogs. Tests: `PcLocalTest`, `PcAutoStopTest` (own-network address), `CoachStandsUpForTheAppTest`, watch screenshot `47-watch-about`.
+
 ## 1.75.1 (134)
 - Version 1.75.1: phone `versionCode` 134, watch 1000134, watch faces 2000134, all "1.75.1".
 - Shopping list: the user's own meals (one food of a placeholder 100 g) are read with `FoodList.read` and listed by their foods, named like the plan's (`Groceries.listName`); a meal it can't read is listed as "for N meals", never in grams.
