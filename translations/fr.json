@@ -168,6 +168,7 @@
  "%s of %s photos. A food in more than one photo counts once.": "%s photos sur %s. Un aliment visible sur plusieurs photos ne compte qu'une fois.",
  "%s of %s planned workouts": "%s entraînements prévus sur %s",
  "%s of %s sets": "%s séries sur %s",
+ "%s of %s steps": "%s sur %s pas",
  "%s of %s taken": "%s pris sur %s",
  "%s of %s this week": "%s sur %s cette semaine",
  "%s of %s tokens.": "%s tokens sur %s.",

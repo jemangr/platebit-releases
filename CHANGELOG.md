@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 1.74.2 (132)
+- Version 1.74.2: phone `versionCode` 132, watch 1000132, watch faces 2000132, all "1.74.2".
+- Today's walk and camera buttons (`ui/dashboard/TodayButtons`, option Z of the owner's sample): the accent as a gem (radial light from the top left, a top shine, a darker rim, a glow in the accent's colour); around the walk button a ring with today's steps against the step goal (`Steps.goal`, as on the activity card), a soft glow under the progress; during a walk a pill with the steps and a thin bar of the same progress, drawn over the pill so it never widens it. The walk button says "%s of %s steps" to TalkBack. New test `TodayButtonsTest` (progress, both buttons clickable, dark, walking and light pictures).
+
 ## 1.74.1 (131)
 - Version 1.74.1: phone `versionCode` 131, watch 1000131, watch faces 2000131, all "1.74.1".
 - `FoodMinerals`: the 319 foods checked against USDA FoodData Central (SR Legacy 2018-04 and FNDDS 2021–2023), unfortified values kept for bread, pasta, rice and flour dishes. Updated: egg (171287), beef mince (174034), shrimp (175180), tuna in water (171986), tofu (172476), bratwurst (171620), seaweed salad, dal and palak paneer (FNDDS, scaled to the list's portion). New test `singleFoodsMatchUsdaSrLegacy`.
