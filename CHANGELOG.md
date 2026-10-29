@@ -2,6 +2,12 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 2.0.1 (138)
+- Version 2.0.1: phone `versionCode` 138, watch 1000138, watch faces 2000138, all "2.0.1".
+- Cycle: the days around ovulation are never shown or named. `Cycle.Phase.OVULATION` has no title; `Cycle.dayLine` gives "Day N · phase" or only "Day N" (card, Women's health screen, watch via `CycleWatch.line`); `Cycle.Mark.OVULATION`, its colour and legend removed from the month calendar; `CyclePatterns.byPhase` gives no card for those days; `Cycle.forCoach` leaves the phase out, and the coach prompts (`CoachRequests`, `GeminiLive`) never estimate or name ovulation or fertile days. Strings removed from `GreekRelease168*` and the five catalogs.
+- Medicines: every medicine reminder and "New pack starts tomorrow" is `VISIBILITY_PRIVATE`, with a public version "Platebit · A reminder you set" (`MedReminders.lockScreen`); name and dose only when unlocked.
+- Tests: `CycleTest.aroundOvulationHasNoPhaseName`, calendar without those days, `CycleWatchTest`, `MedLockScreenTest`.
+
 ## 2.0.0 (137)
 - Version 2.0.0: phone `versionCode` 137, watch 1000137, watch faces 2000137, all "2.0.0".
 - Navigation: side menu (`ui/nav/AppMenu`, 22 tiles), bottom bar Today, Nutrition, Move, Health; sections with wrapping chips (`ui/nav/Sections`); Me from the top bar; "Edit cards" on Today.
