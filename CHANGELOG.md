@@ -2,6 +2,22 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 2.1.0 (139)
+- Version 2.1.0: phone `versionCode` 139, watch 1000139, watch faces 2000139, all "2.1.0".
+- Rotation: `MainActivity` handles orientation/screen-size changes itself (`configChanges`), so the coach pulled over a screen keeps its draft, chat and place.
+- Coach input bar: a quick row with the AI coach (Live) on the left and the plate camera (Scan) on the right, and the "How did I do today?" chip (`InputBar`, `onPhoto`).
+- Coach's style in the chat header and on both Live screens (`CoachStyleButton`); Gemini Live restarts the call after a change.
+- "How did I do today?" (`ui/coach/DayReview`): the chat chip, Today's card from 17:00 once something is logged, and a button on the evening check-in (`DayReview.OPEN`).
+- Movement breaks only when sitting (`walk/Motion`, `DeskBreaks.stillNow`): activity transitions (walking, running, cycling, in a vehicle) and the step counter since the last break; walk transitions also registered while breaks are on.
+- Name (`UserProfile.name`, `UserName`): asked in About you, greetings on Today, the empty chat and the evening check-in; never sent to the AI.
+- Today: the user's own line (`HomeCard.NOTE`) and the logo (`HomeCard.LOGO`) retired from Today, Home cards and the coach's cards.
+- Report a problem (`support/ProblemReport`, `ui/settings/ReportProblem`): form with preview, sent to `api.platebit.app/v1/report`, email fallback; Worker `cloud/`: `POST /v1/report`, D1 `reports` kept 12 months, 5 a day per connection, admin list/open/done/delete, optional `send_email` binding. Legal "5. Your data": one sentence on reports (same `Legal.VERSION`).
+- Export for computer: who it's for (`PcExport.Audience`) and 7/30/90 days; never the shopping list or what's at home in the file; new Water view (`PcExport.water`) in the file and live.
+- Watch: Food at home with adding (`WatchPantry`, `PantryQueue`, data items `/platebit/pantry/<id>`, ack `/platebit/pantry-ack`, phone `WatchPantryIn`); `PantryItem.amount`.
+- Watch faces: °C always, converted from °F (`TO_C`); °F only with the face's new `temp_unit` setting; render.py draws face settings.
+- Steps from an iPhone (`health/IphoneSteps`, `AppleHealth`): Apple Health export (streamed, larger source per day) and Shortcut links `platebit://do/steps?n=` (browsable `/steps` only, confirmed in the app); `ActivityMerge.larger`, never added.
+- Greek in `GreekRelease210` and the five catalogs. Tests: `DayReviewTest`, `DeskBreaksStillTest`, `UserNameTest`, `ProblemReportFormTest`, `PcExportTest.aFileForADietitianATrainerOrADoctor`, `WatchPantryTest`, `IphoneStepsTest`, worker report tests.
+
 ## 2.0.1 (138)
 - Version 2.0.1: phone `versionCode` 138, watch 1000138, watch faces 2000138, all "2.0.1".
 - Cycle: the days around ovulation are never shown or named. `Cycle.Phase.OVULATION` has no title; `Cycle.dayLine` gives "Day N · phase" or only "Day N" (card, Women's health screen, watch via `CycleWatch.line`); `Cycle.Mark.OVULATION`, its colour and legend removed from the month calendar; `CyclePatterns.byPhase` gives no card for those days; `Cycle.forCoach` leaves the phase out, and the coach prompts (`CoachRequests`, `GeminiLive`) never estimate or name ovulation or fertile days. Strings removed from `GreekRelease168*` and the five catalogs.
