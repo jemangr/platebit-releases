@@ -2,6 +2,22 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 2.2.0 (140)
+- Version 2.2.0: phone `versionCode` 140, watch 1000140, watch faces 2000140, all "2.2.0".
+- Fixes: coach chat saves no longer race (`SecureFiles.write` per-path lock and atomic move; `CoachStore.save` logs instead of crashing). Open Food Facts user-agent `Platebit/<version> (https://platebit.app; contact@platebit.app)`.
+- Coach: problem reports it knows about (`support/ReportHistory`, last 5); copy a week (`COPY_WEEK`, `domain/WeekCopy`, `CoachTrainingChanges.copyWeek`) and `keep_always` with its own items; a photo in the chat (`AiService.chat(image)`, `PhotoStore.saveCoachPhoto`, counts as a scan).
+- Photo result: oil, butter and sauce (`domain/CookingFat`); learns from corrections (`domain/LearnedFoods`, `data/LearnedFoodsStore`, phone only); offline queue (`ai/PhotoQueue`, encrypted, max 10, `PhotoQueueWorker`).
+- Calories by weekday (`domain/WeekdayCalories`, `UserProfile.weekdayKcal`); maintenance card (`domain/Maintenance`, `ui/progress/MaintenanceCard`, `UserProfile.maintainFrom`/`maintainFromKcal`, two-step rise; GLP-1 on: doctor only).
+- Meal plan: "Copy a week" (`ui/plan/CopyWeekUi`).
+- Training: body map (`domain/MuscleMap` with its shapes, `ui/training/MuscleMapUi`, and on `WorkoutShare`); workout of the day (`domain/DayWorkout`, `ui/training/DayWorkoutUi`); places (`domain/Gyms`, `gyms.json`, in backups); 20 drawn moves (`domain/ExerciseMoves`); strength level for 14 lifts; folder and program share (`RoutineShare.link`/`parseAll`, `RoutineFolders.importShared`).
+- Food at home: supplements (`PantryItem.supplement`, `servings`, `perDay`), receipt prices and `PantrySavings`; Nutri-Score and NOVA from Open Food Facts only (`FoodPrefs.scores`).
+- Fasting: nutrients on strict and fish days (`domain/FastingNutrients`, on `FastingHomeCard`); year notes (`reminders/SeasonNotes`); the Sunday note counts what's already at home.
+- GLP-1 check-in on Today the day after a weekly injection (`domain/Glp1CheckIn`, `ui/glp1/Glp1CheckInCard`).
+- Computer: a section for each professional (`data/PcPro`: dietitian meal times, fasting, salt and sugar; trainer readiness, pains and swaps; doctor BP, glucose, medicines and GLP-1 symptoms only when ticked, never notes); water view with each day's goal and electrolytes (`PcExport.hydration`); workout and exercise names translated, kg/lb (`Data.bodyUnit`), checked in 7 languages (`PcExportLanguagesTest`).
+- Watch faces: shorter protein line ("%s more").
+- All features: the 2.2 entries. Greek in `GreekRelease220` and the five catalogs.
+- Tests: `SecureFilesTest`, `FoodViewTest`, `WeekCopyTest`, `CookingFatTest`, `LearnedFoodsTest`, `PhotoQueueTest`, `WeekdayCaloriesTest`, `MuscleMapTest`, `StrengthLevels22Test`, `FolderShareTest`, `GymsTest`, `DayWorkoutTest`, `PantrySupplementsTest`, `NutriScoreTest`, `SeasonNotesTest`, `FastingNutrientsTest`, `MaintenanceTest`, `Glp1CheckInTest`, `PcProTest`, `PcWaterTest`, `PcExportLanguagesTest`, `WorkoutShareShotTest`, worker admin page parse test.
+
 ## 2.1.0 (139)
 - Version 2.1.0: phone `versionCode` 139, watch 1000139, watch faces 2000139, all "2.1.0".
 - Rotation: `MainActivity` handles orientation/screen-size changes itself (`configChanges`), so the coach pulled over a screen keeps its draft, chat and place.
