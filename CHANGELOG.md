@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 2.2.1 (141)
+- Version 2.2.1: phone `versionCode` 141, watch 1000141, watch faces 2000141, all "2.2.1". Only this change.
+- Settings → About: "Share Platebit" (Android share, link platebit.app) and "Our other apps" (Gamenight GR, Binelik AI, Billable Calls), opened if installed (packages in `<queries>`), else their latest APK from GitHub (`support/MoreApps`). Greek in `GreekRelease221` and the five catalogs.
+
 ## 2.2.0 (140)
 - Version 2.2.0: phone `versionCode` 140, watch 1000140, watch faces 2000140, all "2.2.0".
 - Fixes: coach chat saves no longer race (`SecureFiles.write` per-path lock and atomic move; `CoachStore.save` logs instead of crashing). Open Food Facts user-agent `Platebit/<version> (https://platebit.app; contact@platebit.app)`.
