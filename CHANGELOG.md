@@ -2,6 +2,11 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 2.3.0 (142)
+- Version 2.3.0: phone `versionCode` 142, watch 1000142, watch faces 2000142, all "2.3.0".
+- The published APKs are R8 builds (build type `github`: shrunk, obfuscated, not debuggable, still updating themselves from GitHub Releases, same key); wear release minified; Play AABs built; R8 mappings kept on the private `r8-mappings` branch. Closed licence on the releases page.
+- «Our other apps»: Gamenight GR is now called GameNight.
+
 ## 2.2.1 (141)
 - Version 2.2.1: phone `versionCode` 141, watch 1000141, watch faces 2000141, all "2.2.1". Only this change.
 - Settings → About: "Share Platebit" (Android share, link platebit.app) and "Our other apps" (Gamenight GR, Binelik AI, Billable Calls), opened if installed (packages in `<queries>`), else their latest APK from GitHub (`support/MoreApps`). Greek in `GreekRelease221` and the five catalogs.

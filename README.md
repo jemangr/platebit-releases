@@ -197,6 +197,10 @@ It's off by default, and other scale models aren't supported. Body composition i
 Onboarding asks about your goal (lose fat, recomposition, build muscle, maintain, performance, health), training history and current routine, how you record workouts, your day (wake, sleep, school or work, whether you can bring food), supplements and coffee, and health notes kept only for safety. `PlanEngine` turns the answers into calories and macros (Katch-McArdle when body fat is known, protein by goal, a fat floor), carb cycling for training days, a water goal with creatine and coffee add-ons that never passes a doctor's fluid limit, a last-drink time before sleep, meal times around your day with portable options, a training split and the best way to record workouts. The AI Coach gets all of it as context. Profiles from older versions keep their numbers until the questions are answered.
 
 
+## License
+
+© 2026 jemangr (Giannis Oikonomakis). All rights reserved: the app may be downloaded and used for free, but not copied, modified, redistributed or reverse engineered ([LICENSE](LICENSE)). Platebit is a free beta, provided as is, without warranty, and is not medical advice.
+
 ## Credits
 
 Built on the open-source [Platebit](https://github.com/Joji228/Platebit) project (MIT License). The [Inter](https://rsms.me/inter/) font is used under the SIL Open Font License. Exercises, their instructions and photos come from [free-exercise-db](https://github.com/yuhonas/free-exercise-db) (public domain, The Unlicense).
