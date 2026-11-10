@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 2.3.2 (144)
+- Version 2.3.2: phone `versionCode` 144, watch 1000144, watch faces 2000144, all "2.3.2".
+- Fix: tapping Update crashed 2.3.0/2.3.1 (SecurityException in `canRequestPackageInstalls`): the `github` build type had no `REQUEST_INSTALL_PACKAGES` and no update FileProvider. It now uses the debug self-update manifest; `Updater.canInstall()` no longer throws; CI fails if the published APK lacks either. Users on 2.3.0/2.3.1 install 2.3.2 once from the browser.
+
 ## 2.3.1 (143)
 - Version 2.3.1: phone `versionCode` 143, watch 1000143, watch faces 2000143, all "2.3.1".
 - Lint fixes: clock, desk breaks, shift work and medication logs read as lifecycle-aware state (`collectAsStateWithLifecycle`); `LocalActivity` from activity-compose in CoachLive and NfcTags; the "System" language reads the phone's locale from `Resources.getSystem()` (the app calls `Locale.setDefault` itself), with a fallback for plain JVM tests.

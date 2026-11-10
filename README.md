@@ -83,7 +83,7 @@
 - **Υγεία και ρουτίνα:** υπενθυμίσεις για φάρμακα με μηνιαίο ημερολόγιο, και υπενθυμίσεις για γεύματα, νερό, προπόνηση και ζύγισμα, η καθεμία με δικό της ήχο. Εβδομαδιαία ανασκόπηση κάθε Κυριακή και widget στην αρχική οθόνη.
 - **Ιστορικό και αναφορές:** κάθε μέρα, εβδομάδα και μήνας με τους στόχους σου, αναφορές PDF για διαιτολόγο, προπονητή ή γιατρό, και αυτόματο αντίγραφο ασφαλείας.
 - **Ρολόι Wear OS:** η προπόνηση στον καρπό (επόμενο σετ, κιλά και επαναλήψεις, ✓, ξεκούραση με δόνηση, παλμοί), ξεκούραση με βάση τους παλμούς, μέτρημα επαναλήψεων (beta), και tile με τις θερμίδες και τα μακροθρεπτικά της μέρας.
-- **Platebit Pro AI Cloud (beta, 20 θέσεις, δωρεάν μέσα στην εφαρμογή):** AI χωρίς λογαριασμό και χωρίς key, με 150 αναλύσεις φαγητού και 300 μηνύματα στον coach τον μήνα. Οι πρώτοι testers το ενεργοποιούν μέσα από την εφαρμογή με το όνομά τους.
+- **Cloud AI (δωρεάν beta με πρόσκληση):** AI χωρίς λογαριασμό και χωρίς key, με ημερήσια όρια δίκαιης χρήσης. Όσοι έχουν πρόσκληση το ενεργοποιούν μέσα από την εφαρμογή. Δεν υπάρχουν αγορές ή συνδρομές.
 - **Backup στο Google Drive** κάθε εβδομάδα, και επαναφορά στο νέο κινητό με ένα πάτημα.
 - **Χωρίς λογαριασμό και χωρίς διαφημίσεις:** τα δεδομένα μένουν στο κινητό σου. Επιλέγεις εσύ ποιο AI χρησιμοποιείς.
 
@@ -91,6 +91,8 @@
 1. Κατέβασε το [Platebit.apk](https://github.com/jemangr/platebit-releases/releases/latest/download/Platebit.apk) στο κινητό (Android 12 ή νεότερο).
 2. Άνοιξέ το και επίτρεψε την «Εγκατάσταση άγνωστων εφαρμογών» αν το ζητήσει.
 3. Απάντησε στις ερωτήσεις (περίπου ένα λεπτό) και ενεργοποίησε το AI: Ρυθμίσεις → AI engine → Οδηγός βήμα βήμα.
+
+**Έχεις 2.3.0 ή 2.3.1;** Σε αυτές τις δύο εκδόσεις το «Ενημέρωση» κλείνει την εφαρμογή. Κατέβασε μία φορά το [Platebit.apk](https://github.com/jemangr/platebit-releases/releases/latest/download/Platebit.apk) από τον browser και εγκατάστησέ το πάνω από την παλιά· τα δεδομένα σου μένουν. Από την 2.3.2 οι ενημερώσεις ξαναγίνονται μέσα από την εφαρμογή.
 
 Οι ενημερώσεις έρχονται μέσα από την εφαρμογή. Θες να ελέγξεις το αρχείο; Το SHA-256 κάθε έκδοσης φαίνεται δίπλα στο αρχείο στη σελίδα [Releases](https://github.com/jemangr/platebit-releases/releases). Τι αλλάζει σε κάθε έκδοση: [CHANGELOG.md](CHANGELOG.md).
 
@@ -110,7 +112,7 @@ Platebit is built around one coach that sees the whole picture: the meals you lo
 - 🔁 **The coach changes things for you.** Ask it and it prepares the change as a card: a meal's grams, macros, step goal, a measurement, your day's times, reminders, a planned meal, or your program (sets, reps, rest, adding or swapping an exercise, which days each workout is on, next time's weight). Medicines, settings and keys stay yours.
 - 🤖 **AI Coach.** Tap the button in the middle of the screen to talk live, or hold it for the chat. It knows your meals, water, weigh-ins, body composition and measurements, steps, sleep and heart rate, your program and every set of the last two weeks, your meal plan, and the medicines you chose to share; it answers from your own numbers and prepares changes as cards you accept or decline. It only talks about food, training, sleep, your data and the app.
 - 🎙️ **Gemini Live (optional).** With a Gemini key, Live can use Gemini's own voice: it answers as you talk and you can interrupt it mid-sentence; what was said is added to the chat.
-- ☁️ **Platebit Pro AI Cloud (beta: 20 places, free in the app).** No account and no key: food analyses and the coach work right away, 150 analyses and 300 coach messages a month. The first testers turn it on inside the app with just their name; requests pass through our server to DeepSeek, and we keep only the name and usage counters.
+- ☁️ **Cloud AI (a free, invitation-only beta).** No account and no key: food analyses and the coach work right away, with fair-use daily limits. Invited testers turn it on inside the app; requests pass through our server to DeepSeek, and we keep only the invitation name and usage counters. No purchases, no subscriptions.
 - 📊 **Weekly review.** Sunday at 20:00: the week's calories against target, days on target, protein, water, trend weight, workouts and medicines, plus one concrete thing to try next week.
 
 **Nutrition**
@@ -156,10 +158,10 @@ Platebit is built around one coach that sees the whole picture: the meals you lo
 
 **Your devices and your AI**
 - ⌚ **Health Connect.** Steps, workouts, sleep and heart rate from your watch or ring, and weigh-ins from scales such as Withings or Samsung. Platebit reads, and writes your meals, water and workouts there only if you turn that on; its "How to connect correctly" guide shows which app writes what, so food and workouts are never counted twice; the same workout from two apps counts once.
-- 🔑 **Bring your own AI.** DeepSeek, Gemini, OpenAI, Claude, OpenRouter or any OpenAI-compatible service. The step-by-step setup connects OpenRouter with one tap and walks you through a key for the others. You pay the provider directly, or use its free quota. With your own key nothing goes through us; without one, there's Platebit Pro AI Cloud.
+- 🔑 **Bring your own AI.** DeepSeek, Gemini, OpenAI, Claude, OpenRouter or any OpenAI-compatible service. The step-by-step setup connects OpenRouter with one tap and walks you through a key for the others. You pay the provider directly, or use its free quota. With your own key nothing goes through us; without one, there's Cloud AI if you have an invitation.
 - 📈 **AI use and limits.** Requests and tokens per day, week and month, with your own limits, warnings at 80% and 100% and an optional stop.
 - 🌍 **Seven languages:** Greek, English, Italian, Spanish, French, German and Portuguese (Portugal). Pick one in Settings → Appearance → Language (or in Android's app language settings). The translations are new: see [translations](https://github.com/jemangr/platebit-releases/tree/main/translations) to suggest a fix.
-- 🔒 **Private by design.** No account, no ads, no tracking. Your data stays on your phone; photos and questions go only to the AI you pick (through our server only if you use Platebit Pro AI Cloud).
+- 🔒 **Private by design.** No account, no ads, no tracking. Your data stays on your phone; photos and questions go only to the AI you pick (through our server only if you use Cloud AI).
 
 </details>
 
@@ -167,8 +169,10 @@ Platebit is built around one coach that sees the whole picture: the meals you lo
 
 1. [Download the APK](https://github.com/jemangr/platebit-releases/releases/latest/download/Platebit.apk) on your phone and open it. Allow "Install unknown apps" if Android asks.
 2. Answer the setup questions (about a minute; the rest can wait).
-3. Open **Settings → AI engine → Step-by-step setup**: take one of the 20 free Platebit Pro AI Cloud places (beta) while there are some, or connect your own AI.
+3. Open **Settings → AI engine → Step-by-step setup**: turn on Cloud AI if you have an invitation (free beta), or connect your own AI.
 4. Tap the camera and scan a meal.
+
+**On 2.3.0 or 2.3.1?** In those two versions, tapping Update closes the app. Download [Platebit.apk](https://github.com/jemangr/platebit-releases/releases/latest/download/Platebit.apk) once in your browser and install it over the old one; your data stays. From 2.3.2 on, updates work inside the app again.
 
 Updates arrive inside the app (**Settings → Updates**). Needs Android 12 or newer. To check the file, compare its SHA-256 with the one shown next to it on the [release page](https://github.com/jemangr/platebit-releases/releases/latest). Prefer an app store–like updater? [Obtainium](https://github.com/ImranR98/Obtainium) works with this page: add `https://github.com/jemangr/platebit-releases` and set the APK filter to `^Platebit\.apk$`.
 
