@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 2.3.3 (145)
+- Version 2.3.3: phone `versionCode` 145, watch 1000145, watch faces 2000145, all "2.3.3". No code change.
+- Its "What's new" opens with a warning for 2.3.0/2.3.1, whose Update button crashes: don't tap Update, open platebit.app/apk in the browser (302 to the latest Platebit.apk) and install over the app; data stays. 2.3.0/2.3.1 show these notes in the update notification and dialog before the button.
+
 ## 2.3.2 (144)
 - Version 2.3.2: phone `versionCode` 144, watch 1000144, watch faces 2000144, all "2.3.2".
 - Fix: tapping Update crashed 2.3.0/2.3.1 (SecurityException in `canRequestPackageInstalls`): the `github` build type had no `REQUEST_INSTALL_PACKAGES` and no update FileProvider. It now uses the debug self-update manifest; `Updater.canInstall()` no longer throws; CI fails if the published APK lacks either. Users on 2.3.0/2.3.1 install 2.3.2 once from the browser.
