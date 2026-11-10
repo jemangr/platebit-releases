@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 2.3.1 (143)
+- Version 2.3.1: phone `versionCode` 143, watch 1000143, watch faces 2000143, all "2.3.1".
+- Lint fixes: clock, desk breaks, shift work and medication logs read as lifecycle-aware state (`collectAsStateWithLifecycle`); `LocalActivity` from activity-compose in CoachLive and NfcTags; the "System" language reads the phone's locale from `Resources.getSystem()` (the app calls `Locale.setDefault` itself), with a fallback for plain JVM tests.
+
 ## 2.3.0 (142)
 - Version 2.3.0: phone `versionCode` 142, watch 1000142, watch faces 2000142, all "2.3.0".
 - The published APKs are R8 builds (build type `github`: shrunk, obfuscated, not debuggable, still updating themselves from GitHub Releases, same key); wear release minified; Play AABs built; R8 mappings kept on the private `r8-mappings` branch. Closed licence on the releases page.
