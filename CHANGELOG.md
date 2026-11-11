@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 2.3.4 (146)
+- Version 2.3.4: phone `versionCode` 146, watch 1000146, watch faces 2000146, all "2.3.4".
+- Fix: the AI coach sometimes said a meal was logged ("accepted") with no card to tap. The model copied the history note `[Proposed change: …: accepted, done]` instead of writing an `<actions>` block, and the parser dropped blocks in code fences, with curly quotes, trailing commas, escaped or singular tags, portion totals instead of per-100 g values, or a cut-off array. The history note now reads `[Earlier card "…", accepted by the user]` and the prompt forbids writing it; copied notes are stripped from the text; the parser takes all those shapes (whole objects kept from a cut-off array); an answer that meant to propose but gave no card is asked once more for the block, and if it still fails the user reads "I couldn't prepare that" instead of a false "done". Tests: `CoachProbeTest`.
+
 ## 2.3.3 (145)
 - Version 2.3.3: phone `versionCode` 145, watch 1000145, watch faces 2000145, all "2.3.3". No code change.
 - Its "What's new" opens with a warning for 2.3.0/2.3.1, whose Update button crashes: don't tap Update, open platebit.app/apk in the browser (302 to the latest Platebit.apk) and install over the app; data stays. 2.3.0/2.3.1 show these notes in the update notification and dialog before the button.
