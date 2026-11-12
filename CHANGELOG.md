@@ -2,6 +2,10 @@
 
 Test builds of the Platebit Coach fork (branch `feature/jarvis`). Each version is published as a GitHub Release (`build-<versionCode>`) and arrives inside the app; the in-app "What's new" is in Greek (`release-notes/`).
 
+## 2.3.5 (147)
+- Version 2.3.5: phone `versionCode` 147, watch 1000147, watch faces 2000147, all "2.3.5".
+- Fix (report 12/11): the AI coach wrote "here's the card, tap Accept" (or "I've logged it") with no `<actions>` block, so no card came; 2.3.4 only caught unreadable blocks and copied notes. `CoachActions.promisesCard` now spots that text in English, Greek, German, French, Italian, Spanish and Portuguese (`Parsed.claimOnly`), and the coach is asked once more for the block. `REPAIR` lets the model answer `NONE` when it didn't mean a change, and then the first answer stands. If no card comes, the user reads only "I couldn't prepare that", not the false "tap Accept". New prompt rule: never mention a card, Accept or a logged change without the block, and a yes to a suggested change must carry it. Tests: `CoachProbeTest`.
+
 ## 2.3.4 (146)
 - Version 2.3.4: phone `versionCode` 146, watch 1000146, watch faces 2000146, all "2.3.4".
 - Fix: the AI coach sometimes said a meal was logged ("accepted") with no card to tap. The model copied the history note `[Proposed change: …: accepted, done]` instead of writing an `<actions>` block, and the parser dropped blocks in code fences, with curly quotes, trailing commas, escaped or singular tags, portion totals instead of per-100 g values, or a cut-off array. The history note now reads `[Earlier card "…", accepted by the user]` and the prompt forbids writing it; copied notes are stripped from the text; the parser takes all those shapes (whole objects kept from a cut-off array); an answer that meant to propose but gave no card is asked once more for the block, and if it still fails the user reads "I couldn't prepare that" instead of a false "done". Tests: `CoachProbeTest`.
